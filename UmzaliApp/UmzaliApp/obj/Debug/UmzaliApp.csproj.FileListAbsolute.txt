@@ -1,0 +1,10 @@
+C:\Users\alexa\Documents\Work\Umzali Civils\UmzaliApp\UmzaliApp\bin\Debug\UmzaliApp.exe.config
+C:\Users\alexa\Documents\Work\Umzali Civils\UmzaliApp\UmzaliApp\bin\Debug\UmzaliApp.exe
+C:\Users\alexa\Documents\Work\Umzali Civils\UmzaliApp\UmzaliApp\bin\Debug\UmzaliApp.pdb
+C:\Users\alexa\Documents\Work\Umzali Civils\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.csprojAssemblyReference.cache
+C:\Users\alexa\Documents\Work\Umzali Civils\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.Form1.resources
+C:\Users\alexa\Documents\Work\Umzali Civils\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.Properties.Resources.resources
+C:\Users\alexa\Documents\Work\Umzali Civils\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.csproj.GenerateResource.cache
+C:\Users\alexa\Documents\Work\Umzali Civils\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.csproj.CoreCompileInputs.cache
+C:\Users\alexa\Documents\Work\Umzali Civils\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.exe
+C:\Users\alexa\Documents\Work\Umzali Civils\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.pdb
