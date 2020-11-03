@@ -36,10 +36,10 @@
             this.splitContainer9 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.searchMajorPlantsButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.majorPlantsDataView = new System.Windows.Forms.DataGridView();
             this.smallPlantReportTab = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -328,14 +328,26 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(242, 119);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
-            // textBox1
+            // searchMajorPlantsButton
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.SetColumnSpan(this.textBox1, 2);
-            this.textBox1.Location = new System.Drawing.Point(3, 11);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(236, 20);
-            this.textBox1.TabIndex = 0;
+            this.searchMajorPlantsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.searchMajorPlantsButton.Location = new System.Drawing.Point(3, 91);
+            this.searchMajorPlantsButton.Name = "searchMajorPlantsButton";
+            this.searchMajorPlantsButton.Size = new System.Drawing.Size(115, 23);
+            this.searchMajorPlantsButton.TabIndex = 0;
+            this.searchMajorPlantsButton.Text = "Search";
+            this.searchMajorPlantsButton.UseVisualStyleBackColor = true;
+            this.searchMajorPlantsButton.Click += new System.EventHandler(this.searchMajorPlantsButton_Click);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(124, 91);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(115, 23);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -347,25 +359,14 @@
             this.comboBox1.Size = new System.Drawing.Size(236, 21);
             this.comboBox1.TabIndex = 1;
             // 
-            // searchMajorPlantsButton
+            // textBox1
             // 
-            this.searchMajorPlantsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.searchMajorPlantsButton.Location = new System.Drawing.Point(3, 91);
-            this.searchMajorPlantsButton.Name = "searchMajorPlantsButton";
-            this.searchMajorPlantsButton.Size = new System.Drawing.Size(115, 23);
-            this.searchMajorPlantsButton.TabIndex = 0;
-            this.searchMajorPlantsButton.Text = "Search";
-            this.searchMajorPlantsButton.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(124, 91);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.SetColumnSpan(this.textBox1, 2);
+            this.textBox1.Location = new System.Drawing.Point(3, 11);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(236, 20);
+            this.textBox1.TabIndex = 0;
             // 
             // majorPlantsDataView
             // 
