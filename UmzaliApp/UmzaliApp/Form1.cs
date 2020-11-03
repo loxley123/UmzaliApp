@@ -330,8 +330,9 @@ namespace UmzaliApp
             orderFormTotalVat.Text = ((Double.Parse(orderTotalLabel.Text))*vat).ToString();
         }
 
-        
-
-        
+        private void searchMajorPlantsButton_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("Search"); //the change
+        }
     }
 }
