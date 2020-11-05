@@ -18,3 +18,13 @@ C:\Repos\UmzaliApp\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.csproj.GenerateResour
 C:\Repos\UmzaliApp\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.csproj.CoreCompileInputs.cache
 C:\Repos\UmzaliApp\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.exe
 C:\Repos\UmzaliApp\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.pdb
+C:\Repos\UmzaliApp3\UmzaliApp\UmzaliApp\bin\Debug\UmzaliApp.exe.config
+C:\Repos\UmzaliApp3\UmzaliApp\UmzaliApp\bin\Debug\UmzaliApp.exe
+C:\Repos\UmzaliApp3\UmzaliApp\UmzaliApp\bin\Debug\UmzaliApp.pdb
+C:\Repos\UmzaliApp3\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.csprojAssemblyReference.cache
+C:\Repos\UmzaliApp3\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.Form1.resources
+C:\Repos\UmzaliApp3\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.Properties.Resources.resources
+C:\Repos\UmzaliApp3\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.csproj.GenerateResource.cache
+C:\Repos\UmzaliApp3\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.csproj.CoreCompileInputs.cache
+C:\Repos\UmzaliApp3\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.exe
+C:\Repos\UmzaliApp3\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.pdb
