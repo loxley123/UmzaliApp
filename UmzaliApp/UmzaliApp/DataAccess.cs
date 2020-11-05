@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace UmzaliApp
 {
@@ -144,6 +146,23 @@ namespace UmzaliApp
             }
             return id;
         }
+
+        public void setupComboWithColNames(String spString, ComboBox combo) //Populate the combobox with the column names of the SELECT'ed table      
+        {
+            DataTable dt = getDataTable(spString);
+            var columnNames = new BindingList<KeyValuePair<int, string>>();
+            int count = 0;
+
+            foreach(DataColumn column in dt.Columns)
+            {
+                String columnName = column.ColumnName;
+                columnNames.Add(new KeyValuePair<int, string>(count, columnName));
+                count++;
+            }
+            combo.DataSource = columnNames;            
+            combo.ValueMember = "Key";
+            combo.DisplayMember = "Value";            
+        }
         
 
         public DataTable getDataTable(String spString) //Calls a 'SELECT' stored procedure using the string as the name of the stored procedure
@@ -163,12 +182,113 @@ namespace UmzaliApp
                             adap.Fill(dt);
                         }
                     }
-                    catch
+                    catch (Exception ex)
                     {
-                        Console.WriteLine("Cant connect to database");
-                    }                   
+                        Console.WriteLine("Error: " + ex.Message);
+                    }
                 }
                 conn.Close();
+            }
+            return dt;
+        }
+
+        public DataTable searchMajorPlantsTable(String spString, String textBoxString, int index)
+        {
+            DataTable dt = new DataTable();
+            using (conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                using (cmd = conn.CreateCommand())
+                {
+                    try
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.CommandText = spString;
+                        String parStr = "";
+
+                        //Needs cleanup. 2 switch statements probably not necessary
+
+                        switch(index)
+                        {
+                            case 0:
+                                parStr = "@plantNo";
+                                break;
+                            case 1:
+                                parStr = "@serialNo";
+                                break;
+                            case 2:
+                                parStr = "@machineMake";
+                                break;
+                            case 3:
+                                parStr = "@model";
+                                break;
+                            case 4:
+                                parStr = "@description";
+                                break;
+                            case 5:
+                                parStr = "@tyreSizeFront";
+                                break;
+                            case 6:
+                                parStr = "@quantityFront";
+                                break;
+                            case 7:
+                                parStr = "@tyreSizeRear";
+                                break;
+                            case 8:
+                                parStr = "@quantityRear";
+                                break;
+                        }
+                        switch(index)
+                        {
+                            case 6:
+                            case 8:
+                                //quantityFront and quantityRear are smallints
+                                cmd.Parameters.Add(parStr, SqlDbType.SmallInt).Value = Int32.Parse(textBoxString);
+                                break;
+                            default:
+                                //The rest are nvarchar
+                                cmd.Parameters.Add(parStr, SqlDbType.NVarChar).Value = textBoxString;
+                                break;
+                        }                                            
+                        using (SqlDataAdapter adap = new SqlDataAdapter(cmd))
+                        {
+                            adap.Fill(dt);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Error: " + ex.Message);
+                    }
+
+                }
+            }
+            return dt;
+        }
+
+        public DataTable searchTableInt(String spString, int textBoxInt)
+        {
+            DataTable dt = new DataTable();
+            using (conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                using (cmd = conn.CreateCommand())
+                {
+                    try
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.CommandText = spString;
+                        cmd.Parameters.Add("@par1", SqlDbType.SmallInt).Value = textBoxInt;                        
+                        using (SqlDataAdapter adap = new SqlDataAdapter(cmd))
+                        {
+                            adap.Fill(dt);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Error: " + ex.Message);
+                    }
+
+                }
             }
             return dt;
         }

@@ -35,6 +35,9 @@ namespace UmzaliApp
             orderFormTypeComboBox.DataSource = dt;
             orderFormTypeComboBox.DisplayMember = "OrderType";
             orderFormTypeComboBox.ValueMember = "OrderType";
+            String MPSelect = "MajorPlantsSelect";
+
+            da.setupComboWithColNames(MPSelect, reportMPCombo);
 
             orderFormOrderNoText.Text = (da.getLastOrderID()).ToString();
 
@@ -330,9 +333,15 @@ namespace UmzaliApp
             orderFormTotalVat.Text = ((Double.Parse(orderTotalLabel.Text))*vat).ToString();
         }
 
-        private void searchMajorPlantsButton_Click(object sender, EventArgs e)
+        private void searchMajorPlantsButton_Click(object sender, EventArgs e) //Search the major reports table based on contents of textbox and combobox
         {
-            Console.WriteLine("Search"); //the change
+            majorPlantsDataView.DataSource = da.searchMajorPlantsTable("MajorPlantsSearchSelect", reportMPText.Text, reportMPCombo.SelectedIndex);
+        }
+
+        private void reportMPClearButton_Click(object sender, EventArgs e)
+        {
+            majorPlantsDataView.DataSource = da.getDataTable("majorPlantsSelect");
+            reportMPText.Clear();
         }
     }
 }

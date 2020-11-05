@@ -37,9 +37,9 @@
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.searchMajorPlantsButton = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.reportMPClearButton = new System.Windows.Forms.Button();
+            this.reportMPCombo = new System.Windows.Forms.ComboBox();
+            this.reportMPText = new System.Windows.Forms.TextBox();
             this.majorPlantsDataView = new System.Windows.Forms.DataGridView();
             this.smallPlantReportTab = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -316,9 +316,9 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.searchMajorPlantsButton, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.button2, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.comboBox1, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textBox1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.reportMPClearButton, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.reportMPCombo, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.reportMPText, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
@@ -339,34 +339,35 @@
             this.searchMajorPlantsButton.UseVisualStyleBackColor = true;
             this.searchMajorPlantsButton.Click += new System.EventHandler(this.searchMajorPlantsButton_Click);
             // 
-            // button2
+            // reportMPClearButton
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(124, 91);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.reportMPClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportMPClearButton.Location = new System.Drawing.Point(124, 91);
+            this.reportMPClearButton.Name = "reportMPClearButton";
+            this.reportMPClearButton.Size = new System.Drawing.Size(115, 23);
+            this.reportMPClearButton.TabIndex = 1;
+            this.reportMPClearButton.Text = "Clear";
+            this.reportMPClearButton.UseVisualStyleBackColor = true;
+            this.reportMPClearButton.Click += new System.EventHandler(this.reportMPClearButton_Click);
             // 
-            // comboBox1
+            // reportMPCombo
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.SetColumnSpan(this.comboBox1, 2);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 54);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(236, 21);
-            this.comboBox1.TabIndex = 1;
+            this.reportMPCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.SetColumnSpan(this.reportMPCombo, 2);
+            this.reportMPCombo.FormattingEnabled = true;
+            this.reportMPCombo.Location = new System.Drawing.Point(3, 54);
+            this.reportMPCombo.Name = "reportMPCombo";
+            this.reportMPCombo.Size = new System.Drawing.Size(236, 21);
+            this.reportMPCombo.TabIndex = 1;
             // 
-            // textBox1
+            // reportMPText
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.SetColumnSpan(this.textBox1, 2);
-            this.textBox1.Location = new System.Drawing.Point(3, 11);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(236, 20);
-            this.textBox1.TabIndex = 0;
+            this.reportMPText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.SetColumnSpan(this.reportMPText, 2);
+            this.reportMPText.Location = new System.Drawing.Point(3, 11);
+            this.reportMPText.Name = "reportMPText";
+            this.reportMPText.Size = new System.Drawing.Size(236, 20);
+            this.reportMPText.TabIndex = 0;
             // 
             // majorPlantsDataView
             // 
@@ -1783,9 +1784,9 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button searchMajorPlantsButton;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button reportMPClearButton;
+        private System.Windows.Forms.ComboBox reportMPCombo;
+        private System.Windows.Forms.TextBox reportMPText;
     }
 }
 
