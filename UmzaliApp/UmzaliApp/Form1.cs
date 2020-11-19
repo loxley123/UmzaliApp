@@ -36,17 +36,21 @@ namespace UmzaliApp
             orderFormTypeComboBox.DisplayMember = "OrderType";
             orderFormTypeComboBox.ValueMember = "OrderType";
             String MPSelect = "MajorPlantsSelect";
+            String SPSelect = "SmallPlantsSelect";
 
             da.setupComboWithColNames(MPSelect, reportMPCombo);
-
+            da.setupComboWithColNames(SPSelect, reportSPCombo);
+            
             orderFormOrderNoText.Text = (da.getLastOrderID()).ToString();
 
             tabControl.DrawItem += new DrawItemEventHandler(tabControl_DrawItem);
             tabControl.Click += new EventHandler(tabControl_SelectedIndexChanged);
             removeReportTabs();
 
-            DataTable majorPlantsReport = da.getDataTable("majorPlantsSelect");
-            majorPlantsDataView.DataSource = majorPlantsReport;
+            //DataTable majorPlantsReport = da.getDataTable("majorPlantsSelect");
+            majorPlantsDataView.DataSource = da.getDataTable(MPSelect);
+            smallPlantsDataView.DataSource = da.getDataTable(SPSelect);
+
         }
         
 
@@ -186,12 +190,12 @@ namespace UmzaliApp
             g.DrawString(_tabPage.Text, _tabFont, _textBrush, _tabBounds, new StringFormat(_stringFlags));
         }        
 
-        private void newMajorPlantButton_Click_1(object sender, EventArgs e) //Creates new major plant in table
+        private void newMajorPlantButton_Click_1(object sender, EventArgs e) //Creates new major plant in table. Needs input validation
         {
             da.createMajorPlant(newMPplantNo.Text, newMPserialNo.Text, newMPmachMake.Text, newMPmodel.Text, newMPdesc.Text, newMPtireF.Text, Int32.Parse(newMPquanF.Text), newMPtireR.Text, Int32.Parse(newMPquanR.Text));
         }
 
-        private void newSmallPlantButton_Click_1(object sender, EventArgs e) //Creates new small plant in table
+        private void newSmallPlantButton_Click_1(object sender, EventArgs e) //Creates new small plant in table. Needs input validation
         {
             da.createSmallPlant(smallPlantNo.Text, smallPlantSerial.Text, smallPlantMach.Text, smallPlantModel.Text, smallPlantDesc.Text);
         }
@@ -254,7 +258,7 @@ namespace UmzaliApp
             newOrderMaterialPanel.Controls.Remove((sender as Button).Parent);
         }
 
-        private void orderSubmitButton_Click(object sender, EventArgs e) //Submit order click event
+        private void orderSubmitButton_Click(object sender, EventArgs e) //Submit order click event. Needs fixing and input validation
         {
             double total = 0;
             int count = 1;
@@ -342,6 +346,17 @@ namespace UmzaliApp
         {
             majorPlantsDataView.DataSource = da.getDataTable("majorPlantsSelect");
             reportMPText.Clear();
+        }
+
+        private void reportSPClearButton_Click(object sender, EventArgs e)
+        {
+            smallPlantsDataView.DataSource = da.getDataTable("SmallPlantsSelect");
+            reportSPText.Clear();
+        }
+
+        private void searchSmallPlantsButton_Click(object sender, EventArgs e)
+        {
+            smallPlantsDataView.DataSource = da.searchSmallPlantsTable("SmallPlantsSearchSelect", reportSPText.Text, reportSPCombo.SelectedIndex);
         }
     }
 }
