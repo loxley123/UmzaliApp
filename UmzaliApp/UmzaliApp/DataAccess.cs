@@ -265,6 +265,56 @@ namespace UmzaliApp
             return dt;
         }
 
+        public DataTable searchSmallPlantsTable(String spString, String textBoxString, int index)
+        {
+            DataTable dt = new DataTable();
+            using (conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                using (cmd = conn.CreateCommand())
+                {
+                    try
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.CommandText = spString;
+                        String parStr = "";
+
+                        //Needs cleanup. 2 switch statements probably not necessary
+
+                        switch (index)
+                        {
+                            case 0:
+                                parStr = "@plantNo";
+                                break;
+                            case 1:
+                                parStr = "@serialNo";
+                                break;
+                            case 2:
+                                parStr = "@machineMake";
+                                break;
+                            case 3:
+                                parStr = "@model";
+                                break;
+                            case 4:
+                                parStr = "@description";
+                                break;
+                        }
+                        cmd.Parameters.Add(parStr, SqlDbType.NVarChar).Value = textBoxString;
+                        using (SqlDataAdapter adap = new SqlDataAdapter(cmd))
+                        {
+                            adap.Fill(dt);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Error: " + ex.Message);
+                    }
+                }
+
+            }
+            return dt;
+        }
+
         public DataTable searchTableInt(String spString, int textBoxInt)
         {
             DataTable dt = new DataTable();

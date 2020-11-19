@@ -146,6 +146,14 @@
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.archiveTab = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.splitContainer10 = new System.Windows.Forms.SplitContainer();
+            this.smallPlantsDataView = new System.Windows.Forms.DataGridView();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.reportSPText = new System.Windows.Forms.TextBox();
+            this.reportSPCombo = new System.Windows.Forms.ComboBox();
+            this.searchSmallPlantsButton = new System.Windows.Forms.Button();
+            this.reportSPClearButton = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.reportsTab.SuspendLayout();
             this.majorPlantReportTab.SuspendLayout();
@@ -158,6 +166,7 @@
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.majorPlantsDataView)).BeginInit();
             this.smallPlantReportTab.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.oilReportTab.SuspendLayout();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).BeginInit();
@@ -209,6 +218,13 @@
             this.jobCardsTab.SuspendLayout();
             this.oilTab.SuspendLayout();
             this.archiveTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer10)).BeginInit();
+            this.splitContainer10.Panel1.SuspendLayout();
+            this.splitContainer10.Panel2.SuspendLayout();
+            this.splitContainer10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.smallPlantsDataView)).BeginInit();
+            this.flowLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
@@ -275,7 +291,7 @@
             // 
             this.groupBox12.Controls.Add(this.splitContainer9);
             this.groupBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox12.Location = new System.Drawing.Point(3, 3);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Size = new System.Drawing.Size(758, 674);
@@ -286,6 +302,7 @@
             // splitContainer9
             // 
             this.splitContainer9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.splitContainer9.Location = new System.Drawing.Point(3, 16);
             this.splitContainer9.Name = "splitContainer9";
             this.splitContainer9.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -322,18 +339,18 @@
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(242, 119);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(250, 120);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // searchMajorPlantsButton
             // 
             this.searchMajorPlantsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.searchMajorPlantsButton.Location = new System.Drawing.Point(3, 91);
+            this.searchMajorPlantsButton.Location = new System.Drawing.Point(3, 87);
             this.searchMajorPlantsButton.Name = "searchMajorPlantsButton";
-            this.searchMajorPlantsButton.Size = new System.Drawing.Size(115, 23);
+            this.searchMajorPlantsButton.Size = new System.Drawing.Size(119, 23);
             this.searchMajorPlantsButton.TabIndex = 0;
             this.searchMajorPlantsButton.Text = "Search";
             this.searchMajorPlantsButton.UseVisualStyleBackColor = true;
@@ -342,9 +359,9 @@
             // reportMPClearButton
             // 
             this.reportMPClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.reportMPClearButton.Location = new System.Drawing.Point(124, 91);
+            this.reportMPClearButton.Location = new System.Drawing.Point(128, 87);
             this.reportMPClearButton.Name = "reportMPClearButton";
-            this.reportMPClearButton.Size = new System.Drawing.Size(115, 23);
+            this.reportMPClearButton.Size = new System.Drawing.Size(119, 23);
             this.reportMPClearButton.TabIndex = 1;
             this.reportMPClearButton.Text = "Clear";
             this.reportMPClearButton.UseVisualStyleBackColor = true;
@@ -354,19 +371,20 @@
             // 
             this.reportMPCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.SetColumnSpan(this.reportMPCombo, 2);
+            this.reportMPCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.reportMPCombo.FormattingEnabled = true;
-            this.reportMPCombo.Location = new System.Drawing.Point(3, 54);
+            this.reportMPCombo.Location = new System.Drawing.Point(3, 48);
             this.reportMPCombo.Name = "reportMPCombo";
-            this.reportMPCombo.Size = new System.Drawing.Size(236, 21);
+            this.reportMPCombo.Size = new System.Drawing.Size(244, 21);
             this.reportMPCombo.TabIndex = 1;
             // 
             // reportMPText
             // 
             this.reportMPText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.SetColumnSpan(this.reportMPText, 2);
-            this.reportMPText.Location = new System.Drawing.Point(3, 11);
+            this.reportMPText.Location = new System.Drawing.Point(3, 9);
             this.reportMPText.Name = "reportMPText";
-            this.reportMPText.Size = new System.Drawing.Size(236, 20);
+            this.reportMPText.Size = new System.Drawing.Size(244, 20);
             this.reportMPText.TabIndex = 0;
             // 
             // majorPlantsDataView
@@ -391,6 +409,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.splitContainer10);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(3, 3);
@@ -1231,6 +1250,7 @@
             // companyNameComboBox
             // 
             this.companyNameComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.companyNameComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.companyNameComboBox.FormattingEnabled = true;
             this.companyNameComboBox.Location = new System.Drawing.Point(176, 3);
             this.companyNameComboBox.Name = "companyNameComboBox";
@@ -1371,6 +1391,7 @@
             // orderFormTypeComboBox
             // 
             this.orderFormTypeComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.orderFormTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.orderFormTypeComboBox.FormattingEnabled = true;
             this.orderFormTypeComboBox.Location = new System.Drawing.Point(200, 55);
             this.orderFormTypeComboBox.Name = "orderFormTypeComboBox";
@@ -1579,6 +1600,102 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Archive";
             // 
+            // splitContainer10
+            // 
+            this.splitContainer10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.splitContainer10.Location = new System.Drawing.Point(3, 16);
+            this.splitContainer10.Name = "splitContainer10";
+            this.splitContainer10.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer10.Panel1
+            // 
+            this.splitContainer10.Panel1.Controls.Add(this.flowLayoutPanel5);
+            // 
+            // splitContainer10.Panel2
+            // 
+            this.splitContainer10.Panel2.Controls.Add(this.smallPlantsDataView);
+            this.splitContainer10.Size = new System.Drawing.Size(752, 655);
+            this.splitContainer10.SplitterDistance = 150;
+            this.splitContainer10.TabIndex = 0;
+            // 
+            // smallPlantsDataView
+            // 
+            this.smallPlantsDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.smallPlantsDataView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.smallPlantsDataView.Location = new System.Drawing.Point(0, 0);
+            this.smallPlantsDataView.Name = "smallPlantsDataView";
+            this.smallPlantsDataView.Size = new System.Drawing.Size(752, 501);
+            this.smallPlantsDataView.TabIndex = 0;
+            // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.Controls.Add(this.tableLayoutPanel7);
+            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(752, 150);
+            this.flowLayoutPanel5.TabIndex = 0;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 2;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Controls.Add(this.reportSPText, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.reportSPCombo, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.searchSmallPlantsButton, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.reportSPClearButton, 1, 2);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 3;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(250, 120);
+            this.tableLayoutPanel7.TabIndex = 0;
+            // 
+            // reportSPText
+            // 
+            this.reportSPText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel7.SetColumnSpan(this.reportSPText, 2);
+            this.reportSPText.Location = new System.Drawing.Point(3, 9);
+            this.reportSPText.Name = "reportSPText";
+            this.reportSPText.Size = new System.Drawing.Size(244, 20);
+            this.reportSPText.TabIndex = 0;
+            // 
+            // reportSPCombo
+            // 
+            this.reportSPCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel7.SetColumnSpan(this.reportSPCombo, 2);
+            this.reportSPCombo.FormattingEnabled = true;
+            this.reportSPCombo.Location = new System.Drawing.Point(3, 48);
+            this.reportSPCombo.Name = "reportSPCombo";
+            this.reportSPCombo.Size = new System.Drawing.Size(244, 21);
+            this.reportSPCombo.TabIndex = 1;
+            // 
+            // searchSmallPlantsButton
+            // 
+            this.searchSmallPlantsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.searchSmallPlantsButton.Location = new System.Drawing.Point(3, 87);
+            this.searchSmallPlantsButton.Name = "searchSmallPlantsButton";
+            this.searchSmallPlantsButton.Size = new System.Drawing.Size(119, 23);
+            this.searchSmallPlantsButton.TabIndex = 2;
+            this.searchSmallPlantsButton.Text = "Search";
+            this.searchSmallPlantsButton.UseVisualStyleBackColor = true;
+            this.searchSmallPlantsButton.Click += new System.EventHandler(this.searchSmallPlantsButton_Click);
+            // 
+            // reportSPClearButton
+            // 
+            this.reportSPClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportSPClearButton.Location = new System.Drawing.Point(128, 87);
+            this.reportSPClearButton.Name = "reportSPClearButton";
+            this.reportSPClearButton.Size = new System.Drawing.Size(119, 23);
+            this.reportSPClearButton.TabIndex = 3;
+            this.reportSPClearButton.Text = "Clear";
+            this.reportSPClearButton.UseVisualStyleBackColor = true;
+            this.reportSPClearButton.Click += new System.EventHandler(this.reportSPClearButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1601,6 +1718,7 @@
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.majorPlantsDataView)).EndInit();
             this.smallPlantReportTab.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.oilReportTab.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).EndInit();
@@ -1663,6 +1781,14 @@
             this.jobCardsTab.ResumeLayout(false);
             this.oilTab.ResumeLayout(false);
             this.archiveTab.ResumeLayout(false);
+            this.splitContainer10.Panel1.ResumeLayout(false);
+            this.splitContainer10.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer10)).EndInit();
+            this.splitContainer10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.smallPlantsDataView)).EndInit();
+            this.flowLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1787,6 +1913,14 @@
         private System.Windows.Forms.Button reportMPClearButton;
         private System.Windows.Forms.ComboBox reportMPCombo;
         private System.Windows.Forms.TextBox reportMPText;
+        private System.Windows.Forms.SplitContainer splitContainer10;
+        private System.Windows.Forms.DataGridView smallPlantsDataView;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.TextBox reportSPText;
+        private System.Windows.Forms.ComboBox reportSPCombo;
+        private System.Windows.Forms.Button searchSmallPlantsButton;
+        private System.Windows.Forms.Button reportSPClearButton;
     }
 }
 
