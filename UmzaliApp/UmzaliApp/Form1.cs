@@ -25,31 +25,38 @@ namespace UmzaliApp
         private void Form1_Load(object sender, EventArgs e)
         {
             String companyNamesSP = "CreditorsSelectCompanyNames";
-            DataTable dt = da.getDataTable(companyNamesSP);
+            DataTable dt = da.GetDataTable(companyNamesSP);
             companyNameComboBox.DataSource = dt;
             companyNameComboBox.DisplayMember = "Name";
             companyNameComboBox.ValueMember = "CompanyID";
 
             String orderTypesSP = "OrderTypesSelect";
-            dt = da.getDataTable(orderTypesSP);
+            dt = da.GetDataTable(orderTypesSP);
             orderFormTypeComboBox.DataSource = dt;
             orderFormTypeComboBox.DisplayMember = "OrderType";
             orderFormTypeComboBox.ValueMember = "OrderType";
             String MPSelect = "MajorPlantsSelect";
             String SPSelect = "SmallPlantsSelect";
+            String LabourSelect = "JobCardsSelect";
+            String OilSelect = "OilDetailsSelect";
 
-            da.setupComboWithColNames(MPSelect, reportMPCombo);
-            da.setupComboWithColNames(SPSelect, reportSPCombo);
+            da.SetupComboWithColNames(MPSelect, reportMPCombo);
+            da.SetupComboWithColNames(SPSelect, reportSPCombo);
+            da.SetupComboWithColNames(LabourSelect, reportLabourCombo);
+            da.SetupComboWithColNames(OilSelect, reportOilCombo);
             
-            orderFormOrderNoText.Text = (da.getLastOrderID()).ToString();
+            orderFormOrderNoText.Text = (da.GetLastOrderID()).ToString();
 
             tabControl.DrawItem += new DrawItemEventHandler(tabControl_DrawItem);
             tabControl.Click += new EventHandler(tabControl_SelectedIndexChanged);
             removeReportTabs();
 
             //DataTable majorPlantsReport = da.getDataTable("majorPlantsSelect");
-            majorPlantsDataView.DataSource = da.getDataTable(MPSelect);
-            smallPlantsDataView.DataSource = da.getDataTable(SPSelect);
+            majorPlantsDataView.DataSource = da.GetDataTable(MPSelect);
+            smallPlantsDataView.DataSource = da.GetDataTable(SPSelect);
+            labourDataView.DataSource = da.GetDataTable(LabourSelect);
+            oilDataView.DataSource = da.GetDataTable(OilSelect);
+            
 
         }
         
@@ -78,8 +85,8 @@ namespace UmzaliApp
         {
             tabControl.TabPages.Remove(majorPlantReportTab);
             tabControl.TabPages.Remove(smallPlantReportTab);
-            tabControl.TabPages.Remove(oilReportTab);
             tabControl.TabPages.Remove(labourReportTab);
+            tabControl.TabPages.Remove(oilReportTab);
             tabControl.TabPages.Remove(tyresReportTab);
             tabControl.TabPages.Remove(orderReportTab);
         }
@@ -87,8 +94,8 @@ namespace UmzaliApp
         {
             tabControl.TabPages.Insert(1, majorPlantReportTab);
             tabControl.TabPages.Insert(2, smallPlantReportTab);
-            tabControl.TabPages.Insert(3, oilReportTab);
-            tabControl.TabPages.Insert(4, labourReportTab);
+            tabControl.TabPages.Insert(3, labourReportTab);
+            tabControl.TabPages.Insert(4, oilReportTab);
             tabControl.TabPages.Insert(5, tyresReportTab);
             tabControl.TabPages.Insert(6, orderReportTab);
         }
@@ -192,12 +199,12 @@ namespace UmzaliApp
 
         private void newMajorPlantButton_Click_1(object sender, EventArgs e) //Creates new major plant in table. Needs input validation
         {
-            da.createMajorPlant(newMPplantNo.Text, newMPserialNo.Text, newMPmachMake.Text, newMPmodel.Text, newMPdesc.Text, newMPtireF.Text, Int32.Parse(newMPquanF.Text), newMPtireR.Text, Int32.Parse(newMPquanR.Text));
+            da.CreateMajorPlant(newMPplantNo.Text, newMPserialNo.Text, newMPmachMake.Text, newMPmodel.Text, newMPdesc.Text, newMPtireF.Text, Int32.Parse(newMPquanF.Text), newMPtireR.Text, Int32.Parse(newMPquanR.Text));
         }
 
         private void newSmallPlantButton_Click_1(object sender, EventArgs e) //Creates new small plant in table. Needs input validation
         {
-            da.createSmallPlant(smallPlantNo.Text, smallPlantSerial.Text, smallPlantMach.Text, smallPlantModel.Text, smallPlantDesc.Text);
+            da.CreateSmallPlant(smallPlantNo.Text, smallPlantSerial.Text, smallPlantMach.Text, smallPlantModel.Text, smallPlantDesc.Text);
         }
 
         private void addMaterialButton_Click_1(object sender, EventArgs e) //Add a new line to enter details for a material in the Order tab
@@ -310,10 +317,10 @@ namespace UmzaliApp
                 total += amount;
                 count = 1;
                 //Insert this line into orderdetails
-                da.createNewOrderDetails(da.getLastOrderID(), partNo, desc, amount, quan);
+                da.CreateNewOrderDetails(da.GetLastOrderID(), partNo, desc, amount, quan);
             }
             //Insert into order table
-            da.createNewOrder(da.getLastOrderID(), companyNameComboBox.ValueMember, orderFormPlantNoText.Text, orderFormDatePicker.Value, orderFormRequestedText.Text, orderFormDescText.Text, Int32.Parse(orderFormMachTimeText.Text), orderFormTypeComboBox.ValueMember, total, orderFormCompletedText.Text);
+            da.CreateNewOrder(da.GetLastOrderID(), companyNameComboBox.ValueMember, orderFormPlantNoText.Text, orderFormDatePicker.Value, orderFormRequestedText.Text, orderFormDescText.Text, Int32.Parse(orderFormMachTimeText.Text), orderFormTypeComboBox.ValueMember, total, orderFormCompletedText.Text);
 
             newOrderMaterialPanel.Controls.Clear();
             //Clear all the textfields in order
@@ -339,24 +346,51 @@ namespace UmzaliApp
 
         private void searchMajorPlantsButton_Click(object sender, EventArgs e) //Search the major reports table based on contents of textbox and combobox
         {
-            majorPlantsDataView.DataSource = da.searchMajorPlantsTable("MajorPlantsSearchSelect", reportMPText.Text, reportMPCombo.SelectedIndex);
+            majorPlantsDataView.DataSource = da.SearchMajorPlantsTable("MajorPlantsSearchSelect", reportMPText.Text, reportMPCombo.SelectedIndex);
         }
 
         private void reportMPClearButton_Click(object sender, EventArgs e)
         {
-            majorPlantsDataView.DataSource = da.getDataTable("majorPlantsSelect");
+            majorPlantsDataView.DataSource = da.GetDataTable("majorPlantsSelect");
             reportMPText.Clear();
         }
 
         private void reportSPClearButton_Click(object sender, EventArgs e)
         {
-            smallPlantsDataView.DataSource = da.getDataTable("SmallPlantsSelect");
+            smallPlantsDataView.DataSource = da.GetDataTable("SmallPlantsSelect");
             reportSPText.Clear();
         }
 
         private void searchSmallPlantsButton_Click(object sender, EventArgs e)
         {
-            smallPlantsDataView.DataSource = da.searchSmallPlantsTable("SmallPlantsSearchSelect", reportSPText.Text, reportSPCombo.SelectedIndex);
+            smallPlantsDataView.DataSource = da.SearchSmallPlantsTable("SmallPlantsSearchSelect", reportSPText.Text, reportSPCombo.SelectedIndex);
+        }
+
+        private void newOilEntryButton_Click(object sender, EventArgs e)
+        {
+            da.CreateOilEntry(oilTypeText.Text, oilDatePicker.Value, Double.Parse(oilLitersText.Text), oilOrderNoText.Text, oilArtisanText.Text);
+        }
+
+        private void reportLabourSearchButton_Click(object sender, EventArgs e)
+        {
+            labourDataView.DataSource = da.SearchJobCardsTable("JobCardsSearchSelect", reportLaboutText.Text, reportLabourCombo.SelectedIndex);
+        }
+
+        private void reportLabourResetButton_Click(object sender, EventArgs e)
+        {
+            labourDataView.DataSource = da.GetDataTable("JobCardsSelect");
+            reportLaboutText.Clear();
+        }
+
+        private void reportOilSearchButton_Click(object sender, EventArgs e)
+        {
+            oilDataView.DataSource = da.SearchOilDetailsTable("OilDetailsSearchSelect", reportOilText.Text, reportOilCombo.SelectedIndex);
+        }
+
+        private void reportOilClearButton_Click(object sender, EventArgs e)
+        {
+            oilDataView.DataSource = da.GetDataTable("OilDetailsSelect");
+            reportOilText.Clear();
         }
     }
 }
