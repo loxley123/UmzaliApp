@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.reportsTab = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -43,11 +46,19 @@
             this.majorPlantsDataView = new System.Windows.Forms.DataGridView();
             this.smallPlantReportTab = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.oilReportTab = new System.Windows.Forms.TabPage();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.splitContainer7 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer10 = new System.Windows.Forms.SplitContainer();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.reportSPText = new System.Windows.Forms.TextBox();
+            this.reportSPCombo = new System.Windows.Forms.ComboBox();
+            this.searchSmallPlantsButton = new System.Windows.Forms.Button();
+            this.reportSPClearButton = new System.Windows.Forms.Button();
+            this.smallPlantsDataView = new System.Windows.Forms.DataGridView();
             this.labourReportTab = new System.Windows.Forms.TabPage();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.splitContainer7 = new System.Windows.Forms.SplitContainer();
+            this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
+            this.oilReportTab = new System.Windows.Forms.TabPage();
             this.tyresReportTab = new System.Windows.Forms.TabPage();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.orderReportTab = new System.Windows.Forms.TabPage();
@@ -142,18 +153,57 @@
             this.newOrderMaterialPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.jobCardsTab = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
             this.oilTab = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.label37 = new System.Windows.Forms.Label();
+            this.oilDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.oilTypeText = new System.Windows.Forms.TextBox();
+            this.oilLitersText = new System.Windows.Forms.TextBox();
+            this.oilOrderNoText = new System.Windows.Forms.TextBox();
+            this.oilArtisanText = new System.Windows.Forms.TextBox();
+            this.newOilEntryButton = new System.Windows.Forms.Button();
             this.archiveTab = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.splitContainer10 = new System.Windows.Forms.SplitContainer();
-            this.smallPlantsDataView = new System.Windows.Forms.DataGridView();
-            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.reportSPText = new System.Windows.Forms.TextBox();
-            this.reportSPCombo = new System.Windows.Forms.ComboBox();
-            this.searchSmallPlantsButton = new System.Windows.Forms.Button();
-            this.reportSPClearButton = new System.Windows.Forms.Button();
+            this.labourDataView = new System.Windows.Forms.DataGridView();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.reportLaboutText = new System.Windows.Forms.TextBox();
+            this.reportLabourCombo = new System.Windows.Forms.ComboBox();
+            this.reportLabourSearchButton = new System.Windows.Forms.Button();
+            this.reportLabourResetButton = new System.Windows.Forms.Button();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.splitContainer11 = new System.Windows.Forms.SplitContainer();
+            this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.reportOilText = new System.Windows.Forms.TextBox();
+            this.reportOilCombo = new System.Windows.Forms.ComboBox();
+            this.reportOilSearchButton = new System.Windows.Forms.Button();
+            this.reportOilClearButton = new System.Windows.Forms.Button();
+            this.oilDataView = new System.Windows.Forms.DataGridView();
             this.tabControl.SuspendLayout();
             this.reportsTab.SuspendLayout();
             this.majorPlantReportTab.SuspendLayout();
@@ -167,11 +217,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.majorPlantsDataView)).BeginInit();
             this.smallPlantReportTab.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.oilReportTab.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).BeginInit();
-            this.splitContainer7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer10)).BeginInit();
+            this.splitContainer10.Panel1.SuspendLayout();
+            this.splitContainer10.Panel2.SuspendLayout();
+            this.splitContainer10.SuspendLayout();
+            this.flowLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.smallPlantsDataView)).BeginInit();
             this.labourReportTab.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).BeginInit();
+            this.splitContainer7.Panel1.SuspendLayout();
+            this.splitContainer7.Panel2.SuspendLayout();
+            this.splitContainer7.SuspendLayout();
+            this.flowLayoutPanel8.SuspendLayout();
+            this.oilReportTab.SuspendLayout();
             this.tyresReportTab.SuspendLayout();
             this.orderReportTab.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -216,15 +276,25 @@
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.jobCardsTab.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.flowLayoutPanel7.SuspendLayout();
+            this.tableLayoutPanel9.SuspendLayout();
             this.oilTab.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.flowLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
             this.archiveTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer10)).BeginInit();
-            this.splitContainer10.Panel1.SuspendLayout();
-            this.splitContainer10.Panel2.SuspendLayout();
-            this.splitContainer10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.smallPlantsDataView)).BeginInit();
-            this.flowLayoutPanel5.SuspendLayout();
-            this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.labourDataView)).BeginInit();
+            this.tableLayoutPanel10.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer11)).BeginInit();
+            this.splitContainer11.Panel1.SuspendLayout();
+            this.splitContainer11.Panel2.SuspendLayout();
+            this.splitContainer11.SuspendLayout();
+            this.flowLayoutPanel9.SuspendLayout();
+            this.tableLayoutPanel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.oilDataView)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -233,8 +303,8 @@
             this.tabControl.Controls.Add(this.reportsTab);
             this.tabControl.Controls.Add(this.majorPlantReportTab);
             this.tabControl.Controls.Add(this.smallPlantReportTab);
-            this.tabControl.Controls.Add(this.oilReportTab);
             this.tabControl.Controls.Add(this.labourReportTab);
+            this.tabControl.Controls.Add(this.oilReportTab);
             this.tabControl.Controls.Add(this.tyresReportTab);
             this.tabControl.Controls.Add(this.orderReportTab);
             this.tabControl.Controls.Add(this.newMajorPlantTab);
@@ -393,6 +463,7 @@
             this.majorPlantsDataView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.majorPlantsDataView.Location = new System.Drawing.Point(0, 0);
             this.majorPlantsDataView.Name = "majorPlantsDataView";
+            this.majorPlantsDataView.ReadOnly = true;
             this.majorPlantsDataView.Size = new System.Drawing.Size(752, 501);
             this.majorPlantsDataView.TabIndex = 0;
             // 
@@ -419,38 +490,103 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Small Plants Report";
             // 
-            // oilReportTab
+            // splitContainer10
             // 
-            this.oilReportTab.Controls.Add(this.groupBox7);
-            this.oilReportTab.Location = new System.Drawing.Point(124, 4);
-            this.oilReportTab.Name = "oilReportTab";
-            this.oilReportTab.Padding = new System.Windows.Forms.Padding(3);
-            this.oilReportTab.Size = new System.Drawing.Size(764, 680);
-            this.oilReportTab.TabIndex = 3;
-            this.oilReportTab.Text = "Oil Report";
-            this.oilReportTab.UseVisualStyleBackColor = true;
+            this.splitContainer10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.splitContainer10.Location = new System.Drawing.Point(3, 16);
+            this.splitContainer10.Name = "splitContainer10";
+            this.splitContainer10.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // groupBox7
+            // splitContainer10.Panel1
             // 
-            this.groupBox7.Controls.Add(this.splitContainer7);
-            this.groupBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(3, 3);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(758, 674);
-            this.groupBox7.TabIndex = 1;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Oil Report";
+            this.splitContainer10.Panel1.Controls.Add(this.flowLayoutPanel5);
             // 
-            // splitContainer7
+            // splitContainer10.Panel2
             // 
-            this.splitContainer7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer7.Location = new System.Drawing.Point(3, 16);
-            this.splitContainer7.Name = "splitContainer7";
-            this.splitContainer7.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.splitContainer7.Size = new System.Drawing.Size(752, 655);
-            this.splitContainer7.SplitterDistance = 100;
-            this.splitContainer7.TabIndex = 0;
+            this.splitContainer10.Panel2.Controls.Add(this.smallPlantsDataView);
+            this.splitContainer10.Size = new System.Drawing.Size(752, 655);
+            this.splitContainer10.SplitterDistance = 150;
+            this.splitContainer10.TabIndex = 0;
+            // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.Controls.Add(this.tableLayoutPanel7);
+            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(752, 150);
+            this.flowLayoutPanel5.TabIndex = 0;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 2;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Controls.Add(this.reportSPText, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.reportSPCombo, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.searchSmallPlantsButton, 0, 2);
+            this.tableLayoutPanel7.Controls.Add(this.reportSPClearButton, 1, 2);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 3;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(250, 120);
+            this.tableLayoutPanel7.TabIndex = 0;
+            // 
+            // reportSPText
+            // 
+            this.reportSPText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel7.SetColumnSpan(this.reportSPText, 2);
+            this.reportSPText.Location = new System.Drawing.Point(3, 9);
+            this.reportSPText.Name = "reportSPText";
+            this.reportSPText.Size = new System.Drawing.Size(244, 20);
+            this.reportSPText.TabIndex = 0;
+            // 
+            // reportSPCombo
+            // 
+            this.reportSPCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel7.SetColumnSpan(this.reportSPCombo, 2);
+            this.reportSPCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reportSPCombo.FormattingEnabled = true;
+            this.reportSPCombo.Location = new System.Drawing.Point(3, 48);
+            this.reportSPCombo.Name = "reportSPCombo";
+            this.reportSPCombo.Size = new System.Drawing.Size(244, 21);
+            this.reportSPCombo.TabIndex = 1;
+            // 
+            // searchSmallPlantsButton
+            // 
+            this.searchSmallPlantsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.searchSmallPlantsButton.Location = new System.Drawing.Point(3, 87);
+            this.searchSmallPlantsButton.Name = "searchSmallPlantsButton";
+            this.searchSmallPlantsButton.Size = new System.Drawing.Size(119, 23);
+            this.searchSmallPlantsButton.TabIndex = 2;
+            this.searchSmallPlantsButton.Text = "Search";
+            this.searchSmallPlantsButton.UseVisualStyleBackColor = true;
+            this.searchSmallPlantsButton.Click += new System.EventHandler(this.searchSmallPlantsButton_Click);
+            // 
+            // reportSPClearButton
+            // 
+            this.reportSPClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportSPClearButton.Location = new System.Drawing.Point(128, 87);
+            this.reportSPClearButton.Name = "reportSPClearButton";
+            this.reportSPClearButton.Size = new System.Drawing.Size(119, 23);
+            this.reportSPClearButton.TabIndex = 3;
+            this.reportSPClearButton.Text = "Clear";
+            this.reportSPClearButton.UseVisualStyleBackColor = true;
+            this.reportSPClearButton.Click += new System.EventHandler(this.reportSPClearButton_Click);
+            // 
+            // smallPlantsDataView
+            // 
+            this.smallPlantsDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.smallPlantsDataView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.smallPlantsDataView.Location = new System.Drawing.Point(0, 0);
+            this.smallPlantsDataView.Name = "smallPlantsDataView";
+            this.smallPlantsDataView.ReadOnly = true;
+            this.smallPlantsDataView.Size = new System.Drawing.Size(752, 501);
+            this.smallPlantsDataView.TabIndex = 0;
             // 
             // labourReportTab
             // 
@@ -459,20 +595,60 @@
             this.labourReportTab.Name = "labourReportTab";
             this.labourReportTab.Padding = new System.Windows.Forms.Padding(3);
             this.labourReportTab.Size = new System.Drawing.Size(764, 680);
-            this.labourReportTab.TabIndex = 4;
+            this.labourReportTab.TabIndex = 3;
             this.labourReportTab.Text = "Labour Report";
             this.labourReportTab.UseVisualStyleBackColor = true;
             // 
             // groupBox13
             // 
+            this.groupBox13.Controls.Add(this.splitContainer7);
             this.groupBox13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox13.Location = new System.Drawing.Point(3, 3);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Size = new System.Drawing.Size(758, 674);
-            this.groupBox13.TabIndex = 0;
+            this.groupBox13.TabIndex = 1;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Labour Report";
+            // 
+            // splitContainer7
+            // 
+            this.splitContainer7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.splitContainer7.Location = new System.Drawing.Point(3, 16);
+            this.splitContainer7.Name = "splitContainer7";
+            this.splitContainer7.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer7.Panel1
+            // 
+            this.splitContainer7.Panel1.Controls.Add(this.flowLayoutPanel8);
+            // 
+            // splitContainer7.Panel2
+            // 
+            this.splitContainer7.Panel2.Controls.Add(this.labourDataView);
+            this.splitContainer7.Size = new System.Drawing.Size(752, 655);
+            this.splitContainer7.SplitterDistance = 150;
+            this.splitContainer7.TabIndex = 0;
+            // 
+            // flowLayoutPanel8
+            // 
+            this.flowLayoutPanel8.Controls.Add(this.tableLayoutPanel10);
+            this.flowLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel8.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
+            this.flowLayoutPanel8.Size = new System.Drawing.Size(752, 150);
+            this.flowLayoutPanel8.TabIndex = 0;
+            // 
+            // oilReportTab
+            // 
+            this.oilReportTab.Controls.Add(this.groupBox15);
+            this.oilReportTab.Location = new System.Drawing.Point(124, 4);
+            this.oilReportTab.Name = "oilReportTab";
+            this.oilReportTab.Padding = new System.Windows.Forms.Padding(3);
+            this.oilReportTab.Size = new System.Drawing.Size(764, 680);
+            this.oilReportTab.TabIndex = 4;
+            this.oilReportTab.Text = "Oil Report";
+            this.oilReportTab.UseVisualStyleBackColor = true;
             // 
             // tyresReportTab
             // 
@@ -591,7 +767,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(257, 655);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(250, 655);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -600,7 +776,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 24);
+            this.label1.Size = new System.Drawing.Size(119, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Plant No.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -608,9 +784,9 @@
             // newMPplantNo
             // 
             this.newMPplantNo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.newMPplantNo.Location = new System.Drawing.Point(131, 3);
+            this.newMPplantNo.Location = new System.Drawing.Point(128, 3);
             this.newMPplantNo.Name = "newMPplantNo";
-            this.newMPplantNo.Size = new System.Drawing.Size(123, 20);
+            this.newMPplantNo.Size = new System.Drawing.Size(119, 20);
             this.newMPplantNo.TabIndex = 1;
             // 
             // label2
@@ -619,7 +795,7 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Location = new System.Drawing.Point(3, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 24);
+            this.label2.Size = new System.Drawing.Size(119, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "Serial No,";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -630,7 +806,7 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Location = new System.Drawing.Point(3, 48);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 24);
+            this.label3.Size = new System.Drawing.Size(119, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Machine Make";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -641,7 +817,7 @@
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Location = new System.Drawing.Point(3, 72);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 24);
+            this.label4.Size = new System.Drawing.Size(119, 24);
             this.label4.TabIndex = 4;
             this.label4.Text = "Model";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -652,7 +828,7 @@
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Location = new System.Drawing.Point(3, 96);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 24);
+            this.label5.Size = new System.Drawing.Size(119, 24);
             this.label5.TabIndex = 5;
             this.label5.Text = "Description";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -663,7 +839,7 @@
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Location = new System.Drawing.Point(3, 120);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 24);
+            this.label6.Size = new System.Drawing.Size(119, 24);
             this.label6.TabIndex = 6;
             this.label6.Text = "Tire Size Front";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -674,7 +850,7 @@
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Location = new System.Drawing.Point(3, 144);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(122, 24);
+            this.label7.Size = new System.Drawing.Size(119, 24);
             this.label7.TabIndex = 7;
             this.label7.Text = "Quantity, front";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -685,7 +861,7 @@
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Location = new System.Drawing.Point(3, 168);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(122, 24);
+            this.label8.Size = new System.Drawing.Size(119, 24);
             this.label8.TabIndex = 8;
             this.label8.Text = "Tire Size Rear";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -696,7 +872,7 @@
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label9.Location = new System.Drawing.Point(3, 192);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(122, 24);
+            this.label9.Size = new System.Drawing.Size(119, 24);
             this.label9.TabIndex = 9;
             this.label9.Text = "Quantity, rear";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -704,72 +880,72 @@
             // newMPserialNo
             // 
             this.newMPserialNo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.newMPserialNo.Location = new System.Drawing.Point(131, 27);
+            this.newMPserialNo.Location = new System.Drawing.Point(128, 27);
             this.newMPserialNo.Name = "newMPserialNo";
-            this.newMPserialNo.Size = new System.Drawing.Size(123, 20);
+            this.newMPserialNo.Size = new System.Drawing.Size(119, 20);
             this.newMPserialNo.TabIndex = 10;
             // 
             // newMPmachMake
             // 
             this.newMPmachMake.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.newMPmachMake.Location = new System.Drawing.Point(131, 51);
+            this.newMPmachMake.Location = new System.Drawing.Point(128, 51);
             this.newMPmachMake.Name = "newMPmachMake";
-            this.newMPmachMake.Size = new System.Drawing.Size(123, 20);
+            this.newMPmachMake.Size = new System.Drawing.Size(119, 20);
             this.newMPmachMake.TabIndex = 11;
             // 
             // newMPmodel
             // 
             this.newMPmodel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.newMPmodel.Location = new System.Drawing.Point(131, 75);
+            this.newMPmodel.Location = new System.Drawing.Point(128, 75);
             this.newMPmodel.Name = "newMPmodel";
-            this.newMPmodel.Size = new System.Drawing.Size(123, 20);
+            this.newMPmodel.Size = new System.Drawing.Size(119, 20);
             this.newMPmodel.TabIndex = 12;
             // 
             // newMPdesc
             // 
             this.newMPdesc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.newMPdesc.Location = new System.Drawing.Point(131, 99);
+            this.newMPdesc.Location = new System.Drawing.Point(128, 99);
             this.newMPdesc.Name = "newMPdesc";
-            this.newMPdesc.Size = new System.Drawing.Size(123, 20);
+            this.newMPdesc.Size = new System.Drawing.Size(119, 20);
             this.newMPdesc.TabIndex = 13;
             // 
             // newMPtireF
             // 
             this.newMPtireF.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.newMPtireF.Location = new System.Drawing.Point(131, 123);
+            this.newMPtireF.Location = new System.Drawing.Point(128, 123);
             this.newMPtireF.Name = "newMPtireF";
-            this.newMPtireF.Size = new System.Drawing.Size(123, 20);
+            this.newMPtireF.Size = new System.Drawing.Size(119, 20);
             this.newMPtireF.TabIndex = 14;
             // 
             // newMPquanF
             // 
             this.newMPquanF.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.newMPquanF.Location = new System.Drawing.Point(131, 147);
+            this.newMPquanF.Location = new System.Drawing.Point(128, 147);
             this.newMPquanF.Name = "newMPquanF";
-            this.newMPquanF.Size = new System.Drawing.Size(123, 20);
+            this.newMPquanF.Size = new System.Drawing.Size(119, 20);
             this.newMPquanF.TabIndex = 15;
             // 
             // newMPtireR
             // 
             this.newMPtireR.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.newMPtireR.Location = new System.Drawing.Point(131, 171);
+            this.newMPtireR.Location = new System.Drawing.Point(128, 171);
             this.newMPtireR.Name = "newMPtireR";
-            this.newMPtireR.Size = new System.Drawing.Size(123, 20);
+            this.newMPtireR.Size = new System.Drawing.Size(119, 20);
             this.newMPtireR.TabIndex = 16;
             // 
             // newMPquanR
             // 
             this.newMPquanR.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.newMPquanR.Location = new System.Drawing.Point(131, 195);
+            this.newMPquanR.Location = new System.Drawing.Point(128, 195);
             this.newMPquanR.Name = "newMPquanR";
-            this.newMPquanR.Size = new System.Drawing.Size(123, 20);
+            this.newMPquanR.Size = new System.Drawing.Size(119, 20);
             this.newMPquanR.TabIndex = 17;
             // 
             // newMajorPlantButton
             // 
             this.newMajorPlantButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.tableLayoutPanel1.SetColumnSpan(this.newMajorPlantButton, 2);
-            this.newMajorPlantButton.Location = new System.Drawing.Point(78, 219);
+            this.newMajorPlantButton.Location = new System.Drawing.Point(75, 219);
             this.newMajorPlantButton.Name = "newMajorPlantButton";
             this.newMajorPlantButton.Size = new System.Drawing.Size(100, 23);
             this.newMajorPlantButton.TabIndex = 18;
@@ -1547,6 +1723,7 @@
             // 
             // groupBox9
             // 
+            this.groupBox9.Controls.Add(this.flowLayoutPanel7);
             this.groupBox9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.Location = new System.Drawing.Point(3, 3);
@@ -1555,6 +1732,219 @@
             this.groupBox9.TabIndex = 2;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Job Cards";
+            // 
+            // flowLayoutPanel7
+            // 
+            this.flowLayoutPanel7.Controls.Add(this.tableLayoutPanel9);
+            this.flowLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel7.Name = "flowLayoutPanel7";
+            this.flowLayoutPanel7.Size = new System.Drawing.Size(752, 655);
+            this.flowLayoutPanel7.TabIndex = 0;
+            // 
+            // tableLayoutPanel9
+            // 
+            this.tableLayoutPanel9.ColumnCount = 2;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel9.Controls.Add(this.label42, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.label43, 0, 1);
+            this.tableLayoutPanel9.Controls.Add(this.label44, 0, 2);
+            this.tableLayoutPanel9.Controls.Add(this.label45, 0, 3);
+            this.tableLayoutPanel9.Controls.Add(this.label46, 0, 4);
+            this.tableLayoutPanel9.Controls.Add(this.label47, 0, 5);
+            this.tableLayoutPanel9.Controls.Add(this.label48, 0, 6);
+            this.tableLayoutPanel9.Controls.Add(this.label49, 0, 7);
+            this.tableLayoutPanel9.Controls.Add(this.label50, 0, 8);
+            this.tableLayoutPanel9.Controls.Add(this.label51, 0, 9);
+            this.tableLayoutPanel9.Controls.Add(this.label52, 0, 10);
+            this.tableLayoutPanel9.Controls.Add(this.label53, 0, 11);
+            this.tableLayoutPanel9.Controls.Add(this.label54, 0, 12);
+            this.tableLayoutPanel9.Controls.Add(this.label55, 0, 13);
+            this.tableLayoutPanel9.Controls.Add(this.label56, 0, 14);
+            this.tableLayoutPanel9.Controls.Add(this.label57, 0, 15);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
+            this.tableLayoutPanel9.RowCount = 17;
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(287, 422);
+            this.tableLayoutPanel9.TabIndex = 0;
+            // 
+            // label42
+            // 
+            this.label42.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(3, 5);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(94, 13);
+            this.label42.TabIndex = 0;
+            this.label42.Text = "Job Card No.";
+            // 
+            // label43
+            // 
+            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(3, 29);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(94, 13);
+            this.label43.TabIndex = 1;
+            this.label43.Text = "label43";
+            // 
+            // label44
+            // 
+            this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(3, 53);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(94, 13);
+            this.label44.TabIndex = 2;
+            this.label44.Text = "label44";
+            // 
+            // label45
+            // 
+            this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(3, 77);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(94, 13);
+            this.label45.TabIndex = 3;
+            this.label45.Text = "label45";
+            // 
+            // label46
+            // 
+            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(3, 101);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(94, 13);
+            this.label46.TabIndex = 4;
+            this.label46.Text = "label46";
+            // 
+            // label47
+            // 
+            this.label47.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(3, 125);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(94, 13);
+            this.label47.TabIndex = 5;
+            this.label47.Text = "label47";
+            // 
+            // label48
+            // 
+            this.label48.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(3, 149);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(94, 13);
+            this.label48.TabIndex = 6;
+            this.label48.Text = "label48";
+            // 
+            // label49
+            // 
+            this.label49.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(3, 173);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(94, 13);
+            this.label49.TabIndex = 7;
+            this.label49.Text = "label49";
+            // 
+            // label50
+            // 
+            this.label50.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(3, 197);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(94, 13);
+            this.label50.TabIndex = 8;
+            this.label50.Text = "label50";
+            // 
+            // label51
+            // 
+            this.label51.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(3, 221);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(94, 13);
+            this.label51.TabIndex = 9;
+            this.label51.Text = "label51";
+            // 
+            // label52
+            // 
+            this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(3, 245);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(94, 13);
+            this.label52.TabIndex = 10;
+            this.label52.Text = "label52";
+            // 
+            // label53
+            // 
+            this.label53.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(3, 269);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(94, 13);
+            this.label53.TabIndex = 11;
+            this.label53.Text = "label53";
+            // 
+            // label54
+            // 
+            this.label54.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(3, 293);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(94, 13);
+            this.label54.TabIndex = 12;
+            this.label54.Text = "label54";
+            // 
+            // label55
+            // 
+            this.label55.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(3, 317);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(94, 13);
+            this.label55.TabIndex = 13;
+            this.label55.Text = "label55";
+            // 
+            // label56
+            // 
+            this.label56.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(3, 341);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(94, 13);
+            this.label56.TabIndex = 14;
+            this.label56.Text = "label56";
+            // 
+            // label57
+            // 
+            this.label57.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(3, 365);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(94, 13);
+            this.label57.TabIndex = 15;
+            this.label57.Text = "label57";
             // 
             // oilTab
             // 
@@ -1569,6 +1959,7 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.groupBox7);
             this.groupBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.Location = new System.Drawing.Point(3, 3);
@@ -1577,6 +1968,156 @@
             this.groupBox8.TabIndex = 1;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Oil";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.flowLayoutPanel6);
+            this.groupBox7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox7.Location = new System.Drawing.Point(3, 16);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(752, 231);
+            this.groupBox7.TabIndex = 0;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "New Oil Entry";
+            // 
+            // flowLayoutPanel6
+            // 
+            this.flowLayoutPanel6.Controls.Add(this.tableLayoutPanel8);
+            this.flowLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(3, 16);
+            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(746, 212);
+            this.flowLayoutPanel6.TabIndex = 0;
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 2;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel8.Controls.Add(this.label37, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.oilDatePicker, 1, 1);
+            this.tableLayoutPanel8.Controls.Add(this.label38, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.label39, 0, 2);
+            this.tableLayoutPanel8.Controls.Add(this.label40, 0, 3);
+            this.tableLayoutPanel8.Controls.Add(this.label41, 0, 4);
+            this.tableLayoutPanel8.Controls.Add(this.oilTypeText, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.oilLitersText, 1, 2);
+            this.tableLayoutPanel8.Controls.Add(this.oilOrderNoText, 1, 3);
+            this.tableLayoutPanel8.Controls.Add(this.oilArtisanText, 1, 4);
+            this.tableLayoutPanel8.Controls.Add(this.newOilEntryButton, 0, 5);
+            this.tableLayoutPanel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 6;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(350, 150);
+            this.tableLayoutPanel8.TabIndex = 0;
+            // 
+            // label37
+            // 
+            this.label37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(3, 5);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(94, 13);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "Oil Type";
+            // 
+            // oilDatePicker
+            // 
+            this.oilDatePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.oilDatePicker.Location = new System.Drawing.Point(103, 27);
+            this.oilDatePicker.Name = "oilDatePicker";
+            this.oilDatePicker.Size = new System.Drawing.Size(244, 20);
+            this.oilDatePicker.TabIndex = 11;
+            // 
+            // label38
+            // 
+            this.label38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(3, 29);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(94, 13);
+            this.label38.TabIndex = 1;
+            this.label38.Text = "Date";
+            // 
+            // label39
+            // 
+            this.label39.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(3, 53);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(94, 13);
+            this.label39.TabIndex = 2;
+            this.label39.Text = "Liters";
+            // 
+            // label40
+            // 
+            this.label40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(3, 77);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(94, 13);
+            this.label40.TabIndex = 3;
+            this.label40.Text = "Order No.";
+            // 
+            // label41
+            // 
+            this.label41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(3, 101);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(94, 13);
+            this.label41.TabIndex = 4;
+            this.label41.Text = "Artisan";
+            // 
+            // oilTypeText
+            // 
+            this.oilTypeText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.oilTypeText.Location = new System.Drawing.Point(103, 3);
+            this.oilTypeText.Name = "oilTypeText";
+            this.oilTypeText.Size = new System.Drawing.Size(244, 20);
+            this.oilTypeText.TabIndex = 5;
+            // 
+            // oilLitersText
+            // 
+            this.oilLitersText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.oilLitersText.Location = new System.Drawing.Point(103, 51);
+            this.oilLitersText.Name = "oilLitersText";
+            this.oilLitersText.Size = new System.Drawing.Size(244, 20);
+            this.oilLitersText.TabIndex = 7;
+            // 
+            // oilOrderNoText
+            // 
+            this.oilOrderNoText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.oilOrderNoText.Location = new System.Drawing.Point(103, 75);
+            this.oilOrderNoText.Name = "oilOrderNoText";
+            this.oilOrderNoText.Size = new System.Drawing.Size(244, 20);
+            this.oilOrderNoText.TabIndex = 8;
+            // 
+            // oilArtisanText
+            // 
+            this.oilArtisanText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.oilArtisanText.Location = new System.Drawing.Point(103, 99);
+            this.oilArtisanText.Name = "oilArtisanText";
+            this.oilArtisanText.Size = new System.Drawing.Size(244, 20);
+            this.oilArtisanText.TabIndex = 9;
+            // 
+            // newOilEntryButton
+            // 
+            this.newOilEntryButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.newOilEntryButton.Location = new System.Drawing.Point(3, 123);
+            this.newOilEntryButton.Name = "newOilEntryButton";
+            this.newOilEntryButton.Size = new System.Drawing.Size(94, 23);
+            this.newOilEntryButton.TabIndex = 10;
+            this.newOilEntryButton.Text = "New Oil Entry";
+            this.newOilEntryButton.UseVisualStyleBackColor = true;
+            this.newOilEntryButton.Click += new System.EventHandler(this.newOilEntryButton_Click);
             // 
             // archiveTab
             // 
@@ -1600,101 +2141,209 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Archive";
             // 
-            // splitContainer10
+            // labourDataView
             // 
-            this.splitContainer10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.splitContainer10.Location = new System.Drawing.Point(3, 16);
-            this.splitContainer10.Name = "splitContainer10";
-            this.splitContainer10.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.labourDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.labourDataView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labourDataView.Location = new System.Drawing.Point(0, 0);
+            this.labourDataView.Name = "labourDataView";
+            this.labourDataView.ReadOnly = true;
+            this.labourDataView.Size = new System.Drawing.Size(752, 501);
+            this.labourDataView.TabIndex = 0;
             // 
-            // splitContainer10.Panel1
+            // tableLayoutPanel10
             // 
-            this.splitContainer10.Panel1.Controls.Add(this.flowLayoutPanel5);
+            this.tableLayoutPanel10.ColumnCount = 2;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel10.Controls.Add(this.reportLaboutText, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.reportLabourCombo, 0, 1);
+            this.tableLayoutPanel10.Controls.Add(this.reportLabourSearchButton, 0, 2);
+            this.tableLayoutPanel10.Controls.Add(this.reportLabourResetButton, 1, 2);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 3;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(250, 120);
+            this.tableLayoutPanel10.TabIndex = 0;
             // 
-            // splitContainer10.Panel2
+            // reportLaboutText
             // 
-            this.splitContainer10.Panel2.Controls.Add(this.smallPlantsDataView);
-            this.splitContainer10.Size = new System.Drawing.Size(752, 655);
-            this.splitContainer10.SplitterDistance = 150;
-            this.splitContainer10.TabIndex = 0;
+            this.reportLaboutText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel10.SetColumnSpan(this.reportLaboutText, 2);
+            this.reportLaboutText.Location = new System.Drawing.Point(3, 9);
+            this.reportLaboutText.Name = "reportLaboutText";
+            this.reportLaboutText.Size = new System.Drawing.Size(244, 20);
+            this.reportLaboutText.TabIndex = 0;
             // 
-            // smallPlantsDataView
+            // reportLabourCombo
             // 
-            this.smallPlantsDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.smallPlantsDataView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.smallPlantsDataView.Location = new System.Drawing.Point(0, 0);
-            this.smallPlantsDataView.Name = "smallPlantsDataView";
-            this.smallPlantsDataView.Size = new System.Drawing.Size(752, 501);
-            this.smallPlantsDataView.TabIndex = 0;
+            this.reportLabourCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel10.SetColumnSpan(this.reportLabourCombo, 2);
+            this.reportLabourCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reportLabourCombo.FormattingEnabled = true;
+            this.reportLabourCombo.Location = new System.Drawing.Point(3, 48);
+            this.reportLabourCombo.Name = "reportLabourCombo";
+            this.reportLabourCombo.Size = new System.Drawing.Size(244, 21);
+            this.reportLabourCombo.TabIndex = 1;
             // 
-            // flowLayoutPanel5
+            // reportLabourSearchButton
             // 
-            this.flowLayoutPanel5.Controls.Add(this.tableLayoutPanel7);
-            this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(752, 150);
-            this.flowLayoutPanel5.TabIndex = 0;
+            this.reportLabourSearchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportLabourSearchButton.Location = new System.Drawing.Point(3, 87);
+            this.reportLabourSearchButton.Name = "reportLabourSearchButton";
+            this.reportLabourSearchButton.Size = new System.Drawing.Size(119, 23);
+            this.reportLabourSearchButton.TabIndex = 2;
+            this.reportLabourSearchButton.Text = "Search";
+            this.reportLabourSearchButton.UseVisualStyleBackColor = true;
+            this.reportLabourSearchButton.Click += new System.EventHandler(this.reportLabourSearchButton_Click);
             // 
-            // tableLayoutPanel7
+            // reportLabourResetButton
             // 
-            this.tableLayoutPanel7.ColumnCount = 2;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.reportSPText, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.reportSPCombo, 0, 1);
-            this.tableLayoutPanel7.Controls.Add(this.searchSmallPlantsButton, 0, 2);
-            this.tableLayoutPanel7.Controls.Add(this.reportSPClearButton, 1, 2);
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 3;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(250, 120);
-            this.tableLayoutPanel7.TabIndex = 0;
+            this.reportLabourResetButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportLabourResetButton.Location = new System.Drawing.Point(128, 87);
+            this.reportLabourResetButton.Name = "reportLabourResetButton";
+            this.reportLabourResetButton.Size = new System.Drawing.Size(119, 23);
+            this.reportLabourResetButton.TabIndex = 3;
+            this.reportLabourResetButton.Text = "Clear";
+            this.reportLabourResetButton.UseVisualStyleBackColor = true;
+            this.reportLabourResetButton.Click += new System.EventHandler(this.reportLabourResetButton_Click);
             // 
-            // reportSPText
+            // groupBox15
             // 
-            this.reportSPText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel7.SetColumnSpan(this.reportSPText, 2);
-            this.reportSPText.Location = new System.Drawing.Point(3, 9);
-            this.reportSPText.Name = "reportSPText";
-            this.reportSPText.Size = new System.Drawing.Size(244, 20);
-            this.reportSPText.TabIndex = 0;
+            this.groupBox15.Controls.Add(this.splitContainer11);
+            this.groupBox15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox15.Location = new System.Drawing.Point(3, 3);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(758, 674);
+            this.groupBox15.TabIndex = 0;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "Oil Report";
             // 
-            // reportSPCombo
+            // splitContainer11
             // 
-            this.reportSPCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel7.SetColumnSpan(this.reportSPCombo, 2);
-            this.reportSPCombo.FormattingEnabled = true;
-            this.reportSPCombo.Location = new System.Drawing.Point(3, 48);
-            this.reportSPCombo.Name = "reportSPCombo";
-            this.reportSPCombo.Size = new System.Drawing.Size(244, 21);
-            this.reportSPCombo.TabIndex = 1;
+            this.splitContainer11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.splitContainer11.Location = new System.Drawing.Point(3, 16);
+            this.splitContainer11.Name = "splitContainer11";
+            this.splitContainer11.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // searchSmallPlantsButton
+            // splitContainer11.Panel1
             // 
-            this.searchSmallPlantsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.searchSmallPlantsButton.Location = new System.Drawing.Point(3, 87);
-            this.searchSmallPlantsButton.Name = "searchSmallPlantsButton";
-            this.searchSmallPlantsButton.Size = new System.Drawing.Size(119, 23);
-            this.searchSmallPlantsButton.TabIndex = 2;
-            this.searchSmallPlantsButton.Text = "Search";
-            this.searchSmallPlantsButton.UseVisualStyleBackColor = true;
-            this.searchSmallPlantsButton.Click += new System.EventHandler(this.searchSmallPlantsButton_Click);
+            this.splitContainer11.Panel1.Controls.Add(this.flowLayoutPanel9);
             // 
-            // reportSPClearButton
+            // splitContainer11.Panel2
             // 
-            this.reportSPClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.reportSPClearButton.Location = new System.Drawing.Point(128, 87);
-            this.reportSPClearButton.Name = "reportSPClearButton";
-            this.reportSPClearButton.Size = new System.Drawing.Size(119, 23);
-            this.reportSPClearButton.TabIndex = 3;
-            this.reportSPClearButton.Text = "Clear";
-            this.reportSPClearButton.UseVisualStyleBackColor = true;
-            this.reportSPClearButton.Click += new System.EventHandler(this.reportSPClearButton_Click);
+            this.splitContainer11.Panel2.Controls.Add(this.oilDataView);
+            this.splitContainer11.Size = new System.Drawing.Size(752, 655);
+            this.splitContainer11.SplitterDistance = 150;
+            this.splitContainer11.TabIndex = 0;
+            // 
+            // flowLayoutPanel9
+            // 
+            this.flowLayoutPanel9.Controls.Add(this.tableLayoutPanel11);
+            this.flowLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel9.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel9.Name = "flowLayoutPanel9";
+            this.flowLayoutPanel9.Size = new System.Drawing.Size(752, 150);
+            this.flowLayoutPanel9.TabIndex = 0;
+            // 
+            // tableLayoutPanel11
+            // 
+            this.tableLayoutPanel11.ColumnCount = 2;
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel11.Controls.Add(this.reportOilText, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.reportOilCombo, 0, 1);
+            this.tableLayoutPanel11.Controls.Add(this.reportOilSearchButton, 0, 2);
+            this.tableLayoutPanel11.Controls.Add(this.reportOilClearButton, 1, 2);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
+            this.tableLayoutPanel11.RowCount = 3;
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(250, 120);
+            this.tableLayoutPanel11.TabIndex = 0;
+            // 
+            // reportOilText
+            // 
+            this.reportOilText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel11.SetColumnSpan(this.reportOilText, 2);
+            this.reportOilText.Location = new System.Drawing.Point(3, 9);
+            this.reportOilText.Name = "reportOilText";
+            this.reportOilText.Size = new System.Drawing.Size(244, 20);
+            this.reportOilText.TabIndex = 0;
+            // 
+            // reportOilCombo
+            // 
+            this.reportOilCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel11.SetColumnSpan(this.reportOilCombo, 2);
+            this.reportOilCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reportOilCombo.FormattingEnabled = true;
+            this.reportOilCombo.Location = new System.Drawing.Point(3, 48);
+            this.reportOilCombo.Name = "reportOilCombo";
+            this.reportOilCombo.Size = new System.Drawing.Size(244, 21);
+            this.reportOilCombo.TabIndex = 1;
+            // 
+            // reportOilSearchButton
+            // 
+            this.reportOilSearchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportOilSearchButton.Location = new System.Drawing.Point(3, 87);
+            this.reportOilSearchButton.Name = "reportOilSearchButton";
+            this.reportOilSearchButton.Size = new System.Drawing.Size(119, 23);
+            this.reportOilSearchButton.TabIndex = 2;
+            this.reportOilSearchButton.Text = "Search";
+            this.reportOilSearchButton.UseVisualStyleBackColor = true;
+            this.reportOilSearchButton.Click += new System.EventHandler(this.reportOilSearchButton_Click);
+            // 
+            // reportOilClearButton
+            // 
+            this.reportOilClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportOilClearButton.Location = new System.Drawing.Point(128, 87);
+            this.reportOilClearButton.Name = "reportOilClearButton";
+            this.reportOilClearButton.Size = new System.Drawing.Size(119, 23);
+            this.reportOilClearButton.TabIndex = 3;
+            this.reportOilClearButton.Text = "Clear";
+            this.reportOilClearButton.UseVisualStyleBackColor = true;
+            this.reportOilClearButton.Click += new System.EventHandler(this.reportOilClearButton_Click);
+            // 
+            // oilDataView
+            // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.oilDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.oilDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.oilDataView.DefaultCellStyle = dataGridViewCellStyle8;
+            this.oilDataView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.oilDataView.Location = new System.Drawing.Point(0, 0);
+            this.oilDataView.Name = "oilDataView";
+            this.oilDataView.ReadOnly = true;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.oilDataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.oilDataView.Size = new System.Drawing.Size(752, 501);
+            this.oilDataView.TabIndex = 0;
             // 
             // Form1
             // 
@@ -1719,11 +2368,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.majorPlantsDataView)).EndInit();
             this.smallPlantReportTab.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.oilReportTab.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
+            this.splitContainer10.Panel1.ResumeLayout(false);
+            this.splitContainer10.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer10)).EndInit();
+            this.splitContainer10.ResumeLayout(false);
+            this.flowLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.smallPlantsDataView)).EndInit();
+            this.labourReportTab.ResumeLayout(false);
+            this.groupBox13.ResumeLayout(false);
+            this.splitContainer7.Panel1.ResumeLayout(false);
+            this.splitContainer7.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).EndInit();
             this.splitContainer7.ResumeLayout(false);
-            this.labourReportTab.ResumeLayout(false);
+            this.flowLayoutPanel8.ResumeLayout(false);
+            this.oilReportTab.ResumeLayout(false);
             this.tyresReportTab.ResumeLayout(false);
             this.orderReportTab.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
@@ -1779,16 +2439,29 @@
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
             this.jobCardsTab.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.flowLayoutPanel7.ResumeLayout(false);
+            this.tableLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel9.PerformLayout();
             this.oilTab.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.flowLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel8.ResumeLayout(false);
+            this.tableLayoutPanel8.PerformLayout();
             this.archiveTab.ResumeLayout(false);
-            this.splitContainer10.Panel1.ResumeLayout(false);
-            this.splitContainer10.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer10)).EndInit();
-            this.splitContainer10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.smallPlantsDataView)).EndInit();
-            this.flowLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel7.ResumeLayout(false);
-            this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.labourDataView)).EndInit();
+            this.tableLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel10.PerformLayout();
+            this.groupBox15.ResumeLayout(false);
+            this.splitContainer11.Panel1.ResumeLayout(false);
+            this.splitContainer11.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer11)).EndInit();
+            this.splitContainer11.ResumeLayout(false);
+            this.flowLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel11.ResumeLayout(false);
+            this.tableLayoutPanel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.oilDataView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1799,8 +2472,8 @@
         private System.Windows.Forms.TabPage reportsTab;
         private System.Windows.Forms.TabPage majorPlantReportTab;
         private System.Windows.Forms.TabPage smallPlantReportTab;
-        private System.Windows.Forms.TabPage oilReportTab;
         private System.Windows.Forms.TabPage labourReportTab;
+        private System.Windows.Forms.TabPage oilReportTab;
         private System.Windows.Forms.TabPage tyresReportTab;
         private System.Windows.Forms.TabPage orderReportTab;
         private System.Windows.Forms.TabPage newMajorPlantTab;
@@ -1812,9 +2485,6 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.SplitContainer splitContainer7;
-        private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.GroupBox groupBox14;
         private System.Windows.Forms.TabPage oilTab;
         private System.Windows.Forms.TabPage archiveTab;
@@ -1921,6 +2591,56 @@
         private System.Windows.Forms.ComboBox reportSPCombo;
         private System.Windows.Forms.Button searchSmallPlantsButton;
         private System.Windows.Forms.Button reportSPClearButton;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TextBox oilTypeText;
+        private System.Windows.Forms.TextBox oilLitersText;
+        private System.Windows.Forms.TextBox oilOrderNoText;
+        private System.Windows.Forms.TextBox oilArtisanText;
+        private System.Windows.Forms.Button newOilEntryButton;
+        private System.Windows.Forms.DateTimePicker oilDatePicker;
+        private System.Windows.Forms.SplitContainer splitContainer7;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.TextBox reportLaboutText;
+        private System.Windows.Forms.ComboBox reportLabourCombo;
+        private System.Windows.Forms.Button reportLabourSearchButton;
+        private System.Windows.Forms.Button reportLabourResetButton;
+        private System.Windows.Forms.DataGridView labourDataView;
+        private System.Windows.Forms.GroupBox groupBox15;
+        private System.Windows.Forms.SplitContainer splitContainer11;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel9;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
+        private System.Windows.Forms.TextBox reportOilText;
+        private System.Windows.Forms.ComboBox reportOilCombo;
+        private System.Windows.Forms.Button reportOilSearchButton;
+        private System.Windows.Forms.Button reportOilClearButton;
+        private System.Windows.Forms.DataGridView oilDataView;
     }
 }
 

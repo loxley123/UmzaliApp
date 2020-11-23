@@ -14,7 +14,7 @@ namespace UmzaliApp
     {
         private SqlConnection conn;
         private SqlCommand cmd;
-        private String connectionString = "Data Source = DESKTOP-EJ3OT5A\\SQLEXPRESS; Initial Catalog = testSSDB; Integrated Security = True";
+        private string connectionString = "Data Source = DESKTOP-EJ3OT5A\\SQLEXPRESS; Initial Catalog = testSSDB; Integrated Security = True";
 
         public DataAccess()
         {
@@ -22,7 +22,7 @@ namespace UmzaliApp
         }
 
 
-        public void createMajorPlant(String plantNo, String serial, String mach, String model, String desc, String tireFront, int quanFront, String tireRear, int quanRear)
+        public void CreateMajorPlant(string plantNo, string serial, string mach, string model, string desc, string tireFront, int quanFront, string tireRear, int quanRear)
         {
             using (conn = new SqlConnection(connectionString))
             {
@@ -50,9 +50,9 @@ namespace UmzaliApp
                 }
             }
         }
-        public void createSmallPlant(String plantNo, String serial, String mach, String model, String desc) //Creates a new entry in the small plants table
+        public void CreateSmallPlant(string plantNo, string serial, string mach, string model, string desc) //Creates a new entry in the small plants table
         {
-            Console.WriteLine(conn.ConnectionString);
+            
             //conn = new SqlConnection(@"Data Source = DESKTOP-EJ3OT5A\SQLEXPRESS; Initial Catalog = testSSDB; Integrated Security = True");
 
             using (conn = new SqlConnection(connectionString))
@@ -77,8 +77,31 @@ namespace UmzaliApp
                 }
             }
         }
+        public void CreateOilEntry(string oilType, DateTime date, double liters, string orderNo, string artisan)
+        {
+            using (conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    cmd = new SqlCommand("OilDetailsInsert", conn);
+                    cmd.Connection = conn;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("@oilType", SqlDbType.NVarChar).Value = oilType;
+                    cmd.Parameters.Add("@date", SqlDbType.Date).Value = date;
+                    cmd.Parameters.Add("@liters", SqlDbType.Float).Value = liters;
+                    cmd.Parameters.Add("@orderNo", SqlDbType.NVarChar).Value = orderNo;
+                    cmd.Parameters.Add("@artisan", SqlDbType.NVarChar).Value = artisan;
+                    cmd.ExecuteNonQuery();
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.Message);
+                }
+            }
+        }
 
-        public void createNewOrder(int orderID, String companyID, String plantNo, DateTime dateRequired, String requestedBy, String desc, int machTime, String type, double total, String completedBy)
+        public void CreateNewOrder(int orderID, string companyID, string plantNo, DateTime dateRequired, string requestedBy, string desc, int machTime, string type, double total, string completedBy)
         {
             using (conn = new SqlConnection(connectionString))
             {
@@ -107,7 +130,7 @@ namespace UmzaliApp
             }
         }
         
-        public void createNewOrderDetails(int orderID, String partID, String desc, double amount, int quantity) //Creates a new entry in the order details table
+        public void CreateNewOrderDetails(int orderID, string partID, string desc, double amount, int quantity) //Creates a new entry in the order details table
         {
             using (conn = new SqlConnection(connectionString))
             {
@@ -132,9 +155,9 @@ namespace UmzaliApp
             }
         }
 
-        public int getLastOrderID()//Get the last (highest number) in the order id column
+        public int GetLastOrderID()//Get the last (highest number) in the order id column
         {
-            DataTable dt = getDataTable("OrdersSelectLastID");
+            DataTable dt = GetDataTable("OrdersSelectLastID");
             int id = 0;
             try
             {
@@ -147,15 +170,15 @@ namespace UmzaliApp
             return id;
         }
 
-        public void setupComboWithColNames(String spString, ComboBox combo) //Populate the combobox with the column names of the SELECT'ed table      
+        public void SetupComboWithColNames(string spString, ComboBox combo) //Populate the combobox with the column names of the SELECT'ed table      
         {
-            DataTable dt = getDataTable(spString);
+            DataTable dt = GetDataTable(spString);
             var columnNames = new BindingList<KeyValuePair<int, string>>();
             int count = 0;
 
             foreach(DataColumn column in dt.Columns)
             {
-                String columnName = column.ColumnName;
+                string columnName = column.ColumnName;
                 columnNames.Add(new KeyValuePair<int, string>(count, columnName));
                 count++;
             }
@@ -165,7 +188,7 @@ namespace UmzaliApp
         }
         
 
-        public DataTable getDataTable(String spString) //Calls a 'SELECT' stored procedure using the string as the name of the stored procedure
+        public DataTable GetDataTable(string spString) //Calls a 'SELECT' stored procedure using the string as the name of the stored procedure
         {
             DataTable dt = new DataTable();
             using (conn = new SqlConnection(connectionString))
@@ -192,7 +215,7 @@ namespace UmzaliApp
             return dt;
         }
 
-        public DataTable searchMajorPlantsTable(String spString, String textBoxString, int index)
+        public DataTable SearchMajorPlantsTable(string spString, string textBoxString, int index)
         {
             DataTable dt = new DataTable();
             using (conn = new SqlConnection(connectionString))
@@ -204,7 +227,7 @@ namespace UmzaliApp
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.CommandText = spString;
-                        String parStr = "";
+                        string parStr = "";
 
                         //Needs cleanup. 2 switch statements probably not necessary
 
@@ -238,18 +261,7 @@ namespace UmzaliApp
                                 parStr = "@quantityRear";
                                 break;
                         }
-                        switch(index)
-                        {
-                            case 6:
-                            case 8:
-                                //quantityFront and quantityRear are smallints
-                                cmd.Parameters.Add(parStr, SqlDbType.SmallInt).Value = Int32.Parse(textBoxString);
-                                break;
-                            default:
-                                //The rest are nvarchar
-                                cmd.Parameters.Add(parStr, SqlDbType.NVarChar).Value = textBoxString;
-                                break;
-                        }                                            
+                        cmd.Parameters.AddWithValue(parStr, textBoxString);
                         using (SqlDataAdapter adap = new SqlDataAdapter(cmd))
                         {
                             adap.Fill(dt);
@@ -265,7 +277,7 @@ namespace UmzaliApp
             return dt;
         }
 
-        public DataTable searchSmallPlantsTable(String spString, String textBoxString, int index)
+        public DataTable SearchSmallPlantsTable(string spString, string textBoxString, int index)
         {
             DataTable dt = new DataTable();
             using (conn = new SqlConnection(connectionString))
@@ -277,7 +289,7 @@ namespace UmzaliApp
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.CommandText = spString;
-                        String parStr = "";
+                        string parStr = "";
 
                         //Needs cleanup. 2 switch statements probably not necessary
 
@@ -299,7 +311,7 @@ namespace UmzaliApp
                                 parStr = "@description";
                                 break;
                         }
-                        cmd.Parameters.Add(parStr, SqlDbType.NVarChar).Value = textBoxString;
+                        cmd.Parameters.AddWithValue(parStr, textBoxString);
                         using (SqlDataAdapter adap = new SqlDataAdapter(cmd))
                         {
                             adap.Fill(dt);
@@ -315,7 +327,7 @@ namespace UmzaliApp
             return dt;
         }
 
-        public DataTable searchTableInt(String spString, int textBoxInt)
+        public DataTable SearchJobCardsTable(string spString, string textBoxString, int index)
         {
             DataTable dt = new DataTable();
             using (conn = new SqlConnection(connectionString))
@@ -327,7 +339,110 @@ namespace UmzaliApp
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.CommandText = spString;
-                        cmd.Parameters.Add("@par1", SqlDbType.SmallInt).Value = textBoxInt;                        
+                        string parStr = "";
+                        switch (index)
+                        {
+                            case 0:
+                                parStr = "@jobCardNo";
+                                break;
+                            case 1:
+                                parStr = "@date";
+                                break;
+                            case 2:
+                                parStr = "@plantNo";
+                                break;
+                            case 3:
+                                parStr = "@machHours";
+                                break;
+                            case 4:
+                                parStr = "@kilometers";
+                                break;
+                            case 5:
+                                parStr = "@artisan";
+                                break;
+                            case 6:
+                                parStr = "@jobDesc";
+                                break;
+                            case 7:
+                                parStr = "@purchases";
+                                break;
+                            case 8:
+                                parStr = "@orderNo";
+                                break;
+                            case 9:
+                                parStr = "@oil";
+                                break;
+                            case 10:
+                                parStr = "@liters";
+                                break;
+                            case 11:
+                                parStr = "@labourHours";
+                                break;
+                            case 12:
+                                parStr = "@travelHours";
+                                break;
+                            case 13:
+                                parStr = "@site";
+                                break;
+                            case 14:
+                                parStr = "@contectNo";
+                                break;
+                            case 15:
+                                parStr = "@operators";
+                                break;
+                        }
+                        cmd.Parameters.AddWithValue(parStr, textBoxString);
+                        using (SqlDataAdapter adap = new SqlDataAdapter(cmd))
+                        {
+                            adap.Fill(dt);
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Error: " + ex.Message);
+                    }
+                }
+            }
+            return dt;
+        }
+
+        public DataTable SearchOilDetailsTable(string spString, string textBoxString, int index)
+        {
+            DataTable dt = new DataTable();
+            using (conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                using (cmd = conn.CreateCommand())
+                {
+                    try
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.CommandText = spString;
+                        string parStr = "";
+                        switch (index)
+                        {
+                            case 0:
+                                parStr = "@primaryKey";
+                                
+                                break;
+                            case 1:
+                                parStr = "@oilType";
+                                break;
+                            case 2:
+                                parStr = "@date";
+                                break;
+                            case 3:
+                                parStr = "@liters";
+                                break;
+                            case 4:
+                                parStr = "@orderNo";
+                                break;
+                            case 5:
+                                parStr = "@artisan";
+                                break;
+                        }
+                        cmd.Parameters.AddWithValue(parStr, textBoxString);
                         using (SqlDataAdapter adap = new SqlDataAdapter(cmd))
                         {
                             adap.Fill(dt);
@@ -337,12 +452,10 @@ namespace UmzaliApp
                     {
                         Console.WriteLine("Error: " + ex.Message);
                     }
-
                 }
             }
             return dt;
         }
-
     }
 
     
