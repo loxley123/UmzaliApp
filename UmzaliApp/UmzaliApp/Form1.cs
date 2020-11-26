@@ -24,26 +24,28 @@ namespace UmzaliApp
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            String companyNamesSP = "CreditorsSelectCompanyNames";
+            string companyNamesSP = "CreditorsSelectCompanyNames";
             DataTable dt = da.GetDataTable(companyNamesSP);
             companyNameComboBox.DataSource = dt;
             companyNameComboBox.DisplayMember = "Name";
             companyNameComboBox.ValueMember = "CompanyID";
 
-            String orderTypesSP = "OrderTypesSelect";
+            string orderTypesSP = "OrderTypesSelect";
             dt = da.GetDataTable(orderTypesSP);
             orderFormTypeComboBox.DataSource = dt;
             orderFormTypeComboBox.DisplayMember = "OrderType";
             orderFormTypeComboBox.ValueMember = "OrderType";
-            String MPSelect = "MajorPlantsSelect";
-            String SPSelect = "SmallPlantsSelect";
-            String LabourSelect = "JobCardsSelect";
-            String OilSelect = "OilDetailsSelect";
+            string MPSelect = "MajorPlantsSelect";
+            string SPSelect = "SmallPlantsSelect";
+            string LabourSelect = "JobCardsSelect";
+            string OilSelect = "OilDetailsSelect";
+            string TyresSelect = "TyresSelect";
 
             da.SetupComboWithColNames(MPSelect, reportMPCombo);
             da.SetupComboWithColNames(SPSelect, reportSPCombo);
             da.SetupComboWithColNames(LabourSelect, reportLabourCombo);
             da.SetupComboWithColNames(OilSelect, reportOilCombo);
+            da.SetupComboWithColNames(TyresSelect, reportTyreCombo);
             
             orderFormOrderNoText.Text = (da.GetLastOrderID()).ToString();
 
@@ -56,6 +58,7 @@ namespace UmzaliApp
             smallPlantsDataView.DataSource = da.GetDataTable(SPSelect);
             labourDataView.DataSource = da.GetDataTable(LabourSelect);
             oilDataView.DataSource = da.GetDataTable(OilSelect);
+            tyreDataView.DataSource = da.GetDataTable(TyresSelect);
             
 
         }
@@ -346,7 +349,7 @@ namespace UmzaliApp
 
         private void searchMajorPlantsButton_Click(object sender, EventArgs e) //Search the major reports table based on contents of textbox and combobox
         {
-            majorPlantsDataView.DataSource = da.SearchMajorPlantsTable("MajorPlantsSearchSelect", reportMPText.Text, reportMPCombo.SelectedIndex);
+            majorPlantsDataView.DataSource = da.SearchTable("MajorPlantsSearchSelect", reportMPText.Text, reportMPCombo.SelectedIndex, "MajorPlants");
         }
 
         private void reportMPClearButton_Click(object sender, EventArgs e)
@@ -363,7 +366,7 @@ namespace UmzaliApp
 
         private void searchSmallPlantsButton_Click(object sender, EventArgs e)
         {
-            smallPlantsDataView.DataSource = da.SearchSmallPlantsTable("SmallPlantsSearchSelect", reportSPText.Text, reportSPCombo.SelectedIndex);
+            smallPlantsDataView.DataSource = da.SearchTable("SmallPlantsSearchSelect", reportSPText.Text, reportSPCombo.SelectedIndex, "SmallPlants");
         }
 
         private void newOilEntryButton_Click(object sender, EventArgs e)
@@ -373,7 +376,7 @@ namespace UmzaliApp
 
         private void reportLabourSearchButton_Click(object sender, EventArgs e)
         {
-            labourDataView.DataSource = da.SearchJobCardsTable("JobCardsSearchSelect", reportLaboutText.Text, reportLabourCombo.SelectedIndex);
+            labourDataView.DataSource = da.SearchTable("JobCardsSearchSelect", reportLaboutText.Text, reportLabourCombo.SelectedIndex, "JobCards");
         }
 
         private void reportLabourResetButton_Click(object sender, EventArgs e)
@@ -384,13 +387,18 @@ namespace UmzaliApp
 
         private void reportOilSearchButton_Click(object sender, EventArgs e)
         {
-            oilDataView.DataSource = da.SearchOilDetailsTable("OilDetailsSearchSelect", reportOilText.Text, reportOilCombo.SelectedIndex);
+            oilDataView.DataSource = da.SearchTable("OilDetailsSearchSelect", reportOilText.Text, reportOilCombo.SelectedIndex, "OilDetails");
         }
 
         private void reportOilClearButton_Click(object sender, EventArgs e)
         {
             oilDataView.DataSource = da.GetDataTable("OilDetailsSelect");
             reportOilText.Clear();
+        }
+
+        private void reportTyreSearchButton_Click(object sender, EventArgs e)
+        {
+            tyreDataView.DataSource = da.SearchTable("TyresSearchSelect", reportTyreText.Text, reportTyreCombo.SelectedIndex, "Tyres");
         }
     }
 }

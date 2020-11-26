@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -58,7 +61,22 @@
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.splitContainer7 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.reportLaboutText = new System.Windows.Forms.TextBox();
+            this.reportLabourCombo = new System.Windows.Forms.ComboBox();
+            this.reportLabourSearchButton = new System.Windows.Forms.Button();
+            this.reportLabourResetButton = new System.Windows.Forms.Button();
+            this.labourDataView = new System.Windows.Forms.DataGridView();
             this.oilReportTab = new System.Windows.Forms.TabPage();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.splitContainer11 = new System.Windows.Forms.SplitContainer();
+            this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
+            this.reportOilText = new System.Windows.Forms.TextBox();
+            this.reportOilCombo = new System.Windows.Forms.ComboBox();
+            this.reportOilSearchButton = new System.Windows.Forms.Button();
+            this.reportOilClearButton = new System.Windows.Forms.Button();
+            this.oilDataView = new System.Windows.Forms.DataGridView();
             this.tyresReportTab = new System.Windows.Forms.TabPage();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.orderReportTab = new System.Windows.Forms.TabPage();
@@ -189,21 +207,14 @@
             this.newOilEntryButton = new System.Windows.Forms.Button();
             this.archiveTab = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.labourDataView = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.reportLaboutText = new System.Windows.Forms.TextBox();
-            this.reportLabourCombo = new System.Windows.Forms.ComboBox();
-            this.reportLabourSearchButton = new System.Windows.Forms.Button();
-            this.reportLabourResetButton = new System.Windows.Forms.Button();
-            this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.splitContainer11 = new System.Windows.Forms.SplitContainer();
-            this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
-            this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.reportOilText = new System.Windows.Forms.TextBox();
-            this.reportOilCombo = new System.Windows.Forms.ComboBox();
-            this.reportOilSearchButton = new System.Windows.Forms.Button();
-            this.reportOilClearButton = new System.Windows.Forms.Button();
-            this.oilDataView = new System.Windows.Forms.DataGridView();
+            this.splitContainer12 = new System.Windows.Forms.SplitContainer();
+            this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.reportTyreText = new System.Windows.Forms.TextBox();
+            this.reportTyreCombo = new System.Windows.Forms.ComboBox();
+            this.reportTyreSearchButton = new System.Windows.Forms.Button();
+            this.reportTyreClearButton = new System.Windows.Forms.Button();
+            this.tyreDataView = new System.Windows.Forms.DataGridView();
             this.tabControl.SuspendLayout();
             this.reportsTab.SuspendLayout();
             this.majorPlantReportTab.SuspendLayout();
@@ -231,8 +242,19 @@
             this.splitContainer7.Panel2.SuspendLayout();
             this.splitContainer7.SuspendLayout();
             this.flowLayoutPanel8.SuspendLayout();
+            this.tableLayoutPanel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.labourDataView)).BeginInit();
             this.oilReportTab.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer11)).BeginInit();
+            this.splitContainer11.Panel1.SuspendLayout();
+            this.splitContainer11.Panel2.SuspendLayout();
+            this.splitContainer11.SuspendLayout();
+            this.flowLayoutPanel9.SuspendLayout();
+            this.tableLayoutPanel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.oilDataView)).BeginInit();
             this.tyresReportTab.SuspendLayout();
+            this.groupBox14.SuspendLayout();
             this.orderReportTab.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).BeginInit();
@@ -285,16 +307,13 @@
             this.flowLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.archiveTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.labourDataView)).BeginInit();
-            this.tableLayoutPanel10.SuspendLayout();
-            this.groupBox15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer11)).BeginInit();
-            this.splitContainer11.Panel1.SuspendLayout();
-            this.splitContainer11.Panel2.SuspendLayout();
-            this.splitContainer11.SuspendLayout();
-            this.flowLayoutPanel9.SuspendLayout();
-            this.tableLayoutPanel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.oilDataView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer12)).BeginInit();
+            this.splitContainer12.Panel1.SuspendLayout();
+            this.splitContainer12.Panel2.SuspendLayout();
+            this.splitContainer12.SuspendLayout();
+            this.flowLayoutPanel10.SuspendLayout();
+            this.tableLayoutPanel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tyreDataView)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -639,6 +658,76 @@
             this.flowLayoutPanel8.Size = new System.Drawing.Size(752, 150);
             this.flowLayoutPanel8.TabIndex = 0;
             // 
+            // tableLayoutPanel10
+            // 
+            this.tableLayoutPanel10.ColumnCount = 2;
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel10.Controls.Add(this.reportLaboutText, 0, 0);
+            this.tableLayoutPanel10.Controls.Add(this.reportLabourCombo, 0, 1);
+            this.tableLayoutPanel10.Controls.Add(this.reportLabourSearchButton, 0, 2);
+            this.tableLayoutPanel10.Controls.Add(this.reportLabourResetButton, 1, 2);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
+            this.tableLayoutPanel10.RowCount = 3;
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(250, 120);
+            this.tableLayoutPanel10.TabIndex = 0;
+            // 
+            // reportLaboutText
+            // 
+            this.reportLaboutText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel10.SetColumnSpan(this.reportLaboutText, 2);
+            this.reportLaboutText.Location = new System.Drawing.Point(3, 9);
+            this.reportLaboutText.Name = "reportLaboutText";
+            this.reportLaboutText.Size = new System.Drawing.Size(244, 20);
+            this.reportLaboutText.TabIndex = 0;
+            // 
+            // reportLabourCombo
+            // 
+            this.reportLabourCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel10.SetColumnSpan(this.reportLabourCombo, 2);
+            this.reportLabourCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reportLabourCombo.FormattingEnabled = true;
+            this.reportLabourCombo.Location = new System.Drawing.Point(3, 48);
+            this.reportLabourCombo.Name = "reportLabourCombo";
+            this.reportLabourCombo.Size = new System.Drawing.Size(244, 21);
+            this.reportLabourCombo.TabIndex = 1;
+            // 
+            // reportLabourSearchButton
+            // 
+            this.reportLabourSearchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportLabourSearchButton.Location = new System.Drawing.Point(3, 87);
+            this.reportLabourSearchButton.Name = "reportLabourSearchButton";
+            this.reportLabourSearchButton.Size = new System.Drawing.Size(119, 23);
+            this.reportLabourSearchButton.TabIndex = 2;
+            this.reportLabourSearchButton.Text = "Search";
+            this.reportLabourSearchButton.UseVisualStyleBackColor = true;
+            this.reportLabourSearchButton.Click += new System.EventHandler(this.reportLabourSearchButton_Click);
+            // 
+            // reportLabourResetButton
+            // 
+            this.reportLabourResetButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportLabourResetButton.Location = new System.Drawing.Point(128, 87);
+            this.reportLabourResetButton.Name = "reportLabourResetButton";
+            this.reportLabourResetButton.Size = new System.Drawing.Size(119, 23);
+            this.reportLabourResetButton.TabIndex = 3;
+            this.reportLabourResetButton.Text = "Clear";
+            this.reportLabourResetButton.UseVisualStyleBackColor = true;
+            this.reportLabourResetButton.Click += new System.EventHandler(this.reportLabourResetButton_Click);
+            // 
+            // labourDataView
+            // 
+            this.labourDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.labourDataView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labourDataView.Location = new System.Drawing.Point(0, 0);
+            this.labourDataView.Name = "labourDataView";
+            this.labourDataView.ReadOnly = true;
+            this.labourDataView.Size = new System.Drawing.Size(752, 501);
+            this.labourDataView.TabIndex = 0;
+            // 
             // oilReportTab
             // 
             this.oilReportTab.Controls.Add(this.groupBox15);
@@ -649,6 +738,140 @@
             this.oilReportTab.TabIndex = 4;
             this.oilReportTab.Text = "Oil Report";
             this.oilReportTab.UseVisualStyleBackColor = true;
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Controls.Add(this.splitContainer11);
+            this.groupBox15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox15.Location = new System.Drawing.Point(3, 3);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(758, 674);
+            this.groupBox15.TabIndex = 0;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "Oil Report";
+            // 
+            // splitContainer11
+            // 
+            this.splitContainer11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.splitContainer11.Location = new System.Drawing.Point(3, 16);
+            this.splitContainer11.Name = "splitContainer11";
+            this.splitContainer11.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer11.Panel1
+            // 
+            this.splitContainer11.Panel1.Controls.Add(this.flowLayoutPanel9);
+            // 
+            // splitContainer11.Panel2
+            // 
+            this.splitContainer11.Panel2.Controls.Add(this.oilDataView);
+            this.splitContainer11.Size = new System.Drawing.Size(752, 655);
+            this.splitContainer11.SplitterDistance = 150;
+            this.splitContainer11.TabIndex = 0;
+            // 
+            // flowLayoutPanel9
+            // 
+            this.flowLayoutPanel9.Controls.Add(this.tableLayoutPanel11);
+            this.flowLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel9.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel9.Name = "flowLayoutPanel9";
+            this.flowLayoutPanel9.Size = new System.Drawing.Size(752, 150);
+            this.flowLayoutPanel9.TabIndex = 0;
+            // 
+            // tableLayoutPanel11
+            // 
+            this.tableLayoutPanel11.ColumnCount = 2;
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel11.Controls.Add(this.reportOilText, 0, 0);
+            this.tableLayoutPanel11.Controls.Add(this.reportOilCombo, 0, 1);
+            this.tableLayoutPanel11.Controls.Add(this.reportOilSearchButton, 0, 2);
+            this.tableLayoutPanel11.Controls.Add(this.reportOilClearButton, 1, 2);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
+            this.tableLayoutPanel11.RowCount = 3;
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(250, 120);
+            this.tableLayoutPanel11.TabIndex = 0;
+            // 
+            // reportOilText
+            // 
+            this.reportOilText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel11.SetColumnSpan(this.reportOilText, 2);
+            this.reportOilText.Location = new System.Drawing.Point(3, 9);
+            this.reportOilText.Name = "reportOilText";
+            this.reportOilText.Size = new System.Drawing.Size(244, 20);
+            this.reportOilText.TabIndex = 0;
+            // 
+            // reportOilCombo
+            // 
+            this.reportOilCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel11.SetColumnSpan(this.reportOilCombo, 2);
+            this.reportOilCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reportOilCombo.FormattingEnabled = true;
+            this.reportOilCombo.Location = new System.Drawing.Point(3, 48);
+            this.reportOilCombo.Name = "reportOilCombo";
+            this.reportOilCombo.Size = new System.Drawing.Size(244, 21);
+            this.reportOilCombo.TabIndex = 1;
+            // 
+            // reportOilSearchButton
+            // 
+            this.reportOilSearchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportOilSearchButton.Location = new System.Drawing.Point(3, 87);
+            this.reportOilSearchButton.Name = "reportOilSearchButton";
+            this.reportOilSearchButton.Size = new System.Drawing.Size(119, 23);
+            this.reportOilSearchButton.TabIndex = 2;
+            this.reportOilSearchButton.Text = "Search";
+            this.reportOilSearchButton.UseVisualStyleBackColor = true;
+            this.reportOilSearchButton.Click += new System.EventHandler(this.reportOilSearchButton_Click);
+            // 
+            // reportOilClearButton
+            // 
+            this.reportOilClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportOilClearButton.Location = new System.Drawing.Point(128, 87);
+            this.reportOilClearButton.Name = "reportOilClearButton";
+            this.reportOilClearButton.Size = new System.Drawing.Size(119, 23);
+            this.reportOilClearButton.TabIndex = 3;
+            this.reportOilClearButton.Text = "Clear";
+            this.reportOilClearButton.UseVisualStyleBackColor = true;
+            this.reportOilClearButton.Click += new System.EventHandler(this.reportOilClearButton_Click);
+            // 
+            // oilDataView
+            // 
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.oilDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.oilDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.oilDataView.DefaultCellStyle = dataGridViewCellStyle11;
+            this.oilDataView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.oilDataView.Location = new System.Drawing.Point(0, 0);
+            this.oilDataView.Name = "oilDataView";
+            this.oilDataView.ReadOnly = true;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.oilDataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.oilDataView.Size = new System.Drawing.Size(752, 501);
+            this.oilDataView.TabIndex = 0;
             // 
             // tyresReportTab
             // 
@@ -663,6 +886,7 @@
             // 
             // groupBox14
             // 
+            this.groupBox14.Controls.Add(this.splitContainer12);
             this.groupBox14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox14.Location = new System.Drawing.Point(3, 3);
@@ -2141,177 +2365,94 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Archive";
             // 
-            // labourDataView
+            // splitContainer12
             // 
-            this.labourDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.labourDataView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labourDataView.Location = new System.Drawing.Point(0, 0);
-            this.labourDataView.Name = "labourDataView";
-            this.labourDataView.ReadOnly = true;
-            this.labourDataView.Size = new System.Drawing.Size(752, 501);
-            this.labourDataView.TabIndex = 0;
+            this.splitContainer12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.splitContainer12.Location = new System.Drawing.Point(3, 16);
+            this.splitContainer12.Name = "splitContainer12";
+            this.splitContainer12.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // tableLayoutPanel10
+            // splitContainer12.Panel1
             // 
-            this.tableLayoutPanel10.ColumnCount = 2;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel10.Controls.Add(this.reportLaboutText, 0, 0);
-            this.tableLayoutPanel10.Controls.Add(this.reportLabourCombo, 0, 1);
-            this.tableLayoutPanel10.Controls.Add(this.reportLabourSearchButton, 0, 2);
-            this.tableLayoutPanel10.Controls.Add(this.reportLabourResetButton, 1, 2);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.RowCount = 3;
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(250, 120);
-            this.tableLayoutPanel10.TabIndex = 0;
+            this.splitContainer12.Panel1.Controls.Add(this.flowLayoutPanel10);
             // 
-            // reportLaboutText
+            // splitContainer12.Panel2
             // 
-            this.reportLaboutText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel10.SetColumnSpan(this.reportLaboutText, 2);
-            this.reportLaboutText.Location = new System.Drawing.Point(3, 9);
-            this.reportLaboutText.Name = "reportLaboutText";
-            this.reportLaboutText.Size = new System.Drawing.Size(244, 20);
-            this.reportLaboutText.TabIndex = 0;
+            this.splitContainer12.Panel2.Controls.Add(this.tyreDataView);
+            this.splitContainer12.Size = new System.Drawing.Size(752, 655);
+            this.splitContainer12.SplitterDistance = 150;
+            this.splitContainer12.TabIndex = 0;
             // 
-            // reportLabourCombo
+            // flowLayoutPanel10
             // 
-            this.reportLabourCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel10.SetColumnSpan(this.reportLabourCombo, 2);
-            this.reportLabourCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.reportLabourCombo.FormattingEnabled = true;
-            this.reportLabourCombo.Location = new System.Drawing.Point(3, 48);
-            this.reportLabourCombo.Name = "reportLabourCombo";
-            this.reportLabourCombo.Size = new System.Drawing.Size(244, 21);
-            this.reportLabourCombo.TabIndex = 1;
+            this.flowLayoutPanel10.Controls.Add(this.tableLayoutPanel12);
+            this.flowLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel10.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel10.Name = "flowLayoutPanel10";
+            this.flowLayoutPanel10.Size = new System.Drawing.Size(752, 150);
+            this.flowLayoutPanel10.TabIndex = 0;
             // 
-            // reportLabourSearchButton
+            // tableLayoutPanel12
             // 
-            this.reportLabourSearchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.reportLabourSearchButton.Location = new System.Drawing.Point(3, 87);
-            this.reportLabourSearchButton.Name = "reportLabourSearchButton";
-            this.reportLabourSearchButton.Size = new System.Drawing.Size(119, 23);
-            this.reportLabourSearchButton.TabIndex = 2;
-            this.reportLabourSearchButton.Text = "Search";
-            this.reportLabourSearchButton.UseVisualStyleBackColor = true;
-            this.reportLabourSearchButton.Click += new System.EventHandler(this.reportLabourSearchButton_Click);
+            this.tableLayoutPanel12.ColumnCount = 2;
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel12.Controls.Add(this.reportTyreText, 0, 0);
+            this.tableLayoutPanel12.Controls.Add(this.reportTyreCombo, 0, 1);
+            this.tableLayoutPanel12.Controls.Add(this.reportTyreSearchButton, 0, 2);
+            this.tableLayoutPanel12.Controls.Add(this.reportTyreClearButton, 1, 2);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
+            this.tableLayoutPanel12.RowCount = 3;
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(250, 120);
+            this.tableLayoutPanel12.TabIndex = 0;
             // 
-            // reportLabourResetButton
+            // reportTyreText
             // 
-            this.reportLabourResetButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.reportLabourResetButton.Location = new System.Drawing.Point(128, 87);
-            this.reportLabourResetButton.Name = "reportLabourResetButton";
-            this.reportLabourResetButton.Size = new System.Drawing.Size(119, 23);
-            this.reportLabourResetButton.TabIndex = 3;
-            this.reportLabourResetButton.Text = "Clear";
-            this.reportLabourResetButton.UseVisualStyleBackColor = true;
-            this.reportLabourResetButton.Click += new System.EventHandler(this.reportLabourResetButton_Click);
+            this.reportTyreText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel12.SetColumnSpan(this.reportTyreText, 2);
+            this.reportTyreText.Location = new System.Drawing.Point(3, 9);
+            this.reportTyreText.Name = "reportTyreText";
+            this.reportTyreText.Size = new System.Drawing.Size(244, 20);
+            this.reportTyreText.TabIndex = 0;
             // 
-            // groupBox15
+            // reportTyreCombo
             // 
-            this.groupBox15.Controls.Add(this.splitContainer11);
-            this.groupBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox15.Location = new System.Drawing.Point(3, 3);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(758, 674);
-            this.groupBox15.TabIndex = 0;
-            this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "Oil Report";
+            this.reportTyreCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel12.SetColumnSpan(this.reportTyreCombo, 2);
+            this.reportTyreCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reportTyreCombo.FormattingEnabled = true;
+            this.reportTyreCombo.Location = new System.Drawing.Point(3, 48);
+            this.reportTyreCombo.Name = "reportTyreCombo";
+            this.reportTyreCombo.Size = new System.Drawing.Size(244, 21);
+            this.reportTyreCombo.TabIndex = 1;
             // 
-            // splitContainer11
+            // reportTyreSearchButton
             // 
-            this.splitContainer11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.splitContainer11.Location = new System.Drawing.Point(3, 16);
-            this.splitContainer11.Name = "splitContainer11";
-            this.splitContainer11.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.reportTyreSearchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportTyreSearchButton.Location = new System.Drawing.Point(3, 87);
+            this.reportTyreSearchButton.Name = "reportTyreSearchButton";
+            this.reportTyreSearchButton.Size = new System.Drawing.Size(119, 23);
+            this.reportTyreSearchButton.TabIndex = 2;
+            this.reportTyreSearchButton.Text = "Search";
+            this.reportTyreSearchButton.UseVisualStyleBackColor = true;
+            this.reportTyreSearchButton.Click += new System.EventHandler(this.reportTyreSearchButton_Click);
             // 
-            // splitContainer11.Panel1
+            // reportTyreClearButton
             // 
-            this.splitContainer11.Panel1.Controls.Add(this.flowLayoutPanel9);
+            this.reportTyreClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportTyreClearButton.Location = new System.Drawing.Point(128, 87);
+            this.reportTyreClearButton.Name = "reportTyreClearButton";
+            this.reportTyreClearButton.Size = new System.Drawing.Size(119, 23);
+            this.reportTyreClearButton.TabIndex = 3;
+            this.reportTyreClearButton.Text = "Clear";
+            this.reportTyreClearButton.UseVisualStyleBackColor = true;
             // 
-            // splitContainer11.Panel2
-            // 
-            this.splitContainer11.Panel2.Controls.Add(this.oilDataView);
-            this.splitContainer11.Size = new System.Drawing.Size(752, 655);
-            this.splitContainer11.SplitterDistance = 150;
-            this.splitContainer11.TabIndex = 0;
-            // 
-            // flowLayoutPanel9
-            // 
-            this.flowLayoutPanel9.Controls.Add(this.tableLayoutPanel11);
-            this.flowLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel9.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel9.Name = "flowLayoutPanel9";
-            this.flowLayoutPanel9.Size = new System.Drawing.Size(752, 150);
-            this.flowLayoutPanel9.TabIndex = 0;
-            // 
-            // tableLayoutPanel11
-            // 
-            this.tableLayoutPanel11.ColumnCount = 2;
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Controls.Add(this.reportOilText, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.reportOilCombo, 0, 1);
-            this.tableLayoutPanel11.Controls.Add(this.reportOilSearchButton, 0, 2);
-            this.tableLayoutPanel11.Controls.Add(this.reportOilClearButton, 1, 2);
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel11.Name = "tableLayoutPanel11";
-            this.tableLayoutPanel11.RowCount = 3;
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
-            this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(250, 120);
-            this.tableLayoutPanel11.TabIndex = 0;
-            // 
-            // reportOilText
-            // 
-            this.reportOilText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel11.SetColumnSpan(this.reportOilText, 2);
-            this.reportOilText.Location = new System.Drawing.Point(3, 9);
-            this.reportOilText.Name = "reportOilText";
-            this.reportOilText.Size = new System.Drawing.Size(244, 20);
-            this.reportOilText.TabIndex = 0;
-            // 
-            // reportOilCombo
-            // 
-            this.reportOilCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel11.SetColumnSpan(this.reportOilCombo, 2);
-            this.reportOilCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.reportOilCombo.FormattingEnabled = true;
-            this.reportOilCombo.Location = new System.Drawing.Point(3, 48);
-            this.reportOilCombo.Name = "reportOilCombo";
-            this.reportOilCombo.Size = new System.Drawing.Size(244, 21);
-            this.reportOilCombo.TabIndex = 1;
-            // 
-            // reportOilSearchButton
-            // 
-            this.reportOilSearchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.reportOilSearchButton.Location = new System.Drawing.Point(3, 87);
-            this.reportOilSearchButton.Name = "reportOilSearchButton";
-            this.reportOilSearchButton.Size = new System.Drawing.Size(119, 23);
-            this.reportOilSearchButton.TabIndex = 2;
-            this.reportOilSearchButton.Text = "Search";
-            this.reportOilSearchButton.UseVisualStyleBackColor = true;
-            this.reportOilSearchButton.Click += new System.EventHandler(this.reportOilSearchButton_Click);
-            // 
-            // reportOilClearButton
-            // 
-            this.reportOilClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.reportOilClearButton.Location = new System.Drawing.Point(128, 87);
-            this.reportOilClearButton.Name = "reportOilClearButton";
-            this.reportOilClearButton.Size = new System.Drawing.Size(119, 23);
-            this.reportOilClearButton.TabIndex = 3;
-            this.reportOilClearButton.Text = "Clear";
-            this.reportOilClearButton.UseVisualStyleBackColor = true;
-            this.reportOilClearButton.Click += new System.EventHandler(this.reportOilClearButton_Click);
-            // 
-            // oilDataView
+            // tyreDataView
             // 
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
@@ -2320,8 +2461,8 @@
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.oilDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.oilDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tyreDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.tyreDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2329,11 +2470,10 @@
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.oilDataView.DefaultCellStyle = dataGridViewCellStyle8;
-            this.oilDataView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.oilDataView.Location = new System.Drawing.Point(0, 0);
-            this.oilDataView.Name = "oilDataView";
-            this.oilDataView.ReadOnly = true;
+            this.tyreDataView.DefaultCellStyle = dataGridViewCellStyle8;
+            this.tyreDataView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tyreDataView.Location = new System.Drawing.Point(0, 0);
+            this.tyreDataView.Name = "tyreDataView";
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2341,9 +2481,9 @@
             dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.oilDataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.oilDataView.Size = new System.Drawing.Size(752, 501);
-            this.oilDataView.TabIndex = 0;
+            this.tyreDataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.tyreDataView.Size = new System.Drawing.Size(752, 501);
+            this.tyreDataView.TabIndex = 0;
             // 
             // Form1
             // 
@@ -2383,8 +2523,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).EndInit();
             this.splitContainer7.ResumeLayout(false);
             this.flowLayoutPanel8.ResumeLayout(false);
+            this.tableLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.labourDataView)).EndInit();
             this.oilReportTab.ResumeLayout(false);
+            this.groupBox15.ResumeLayout(false);
+            this.splitContainer11.Panel1.ResumeLayout(false);
+            this.splitContainer11.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer11)).EndInit();
+            this.splitContainer11.ResumeLayout(false);
+            this.flowLayoutPanel9.ResumeLayout(false);
+            this.tableLayoutPanel11.ResumeLayout(false);
+            this.tableLayoutPanel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.oilDataView)).EndInit();
             this.tyresReportTab.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
             this.orderReportTab.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).EndInit();
@@ -2450,18 +2603,14 @@
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
             this.archiveTab.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.labourDataView)).EndInit();
-            this.tableLayoutPanel10.ResumeLayout(false);
-            this.tableLayoutPanel10.PerformLayout();
-            this.groupBox15.ResumeLayout(false);
-            this.splitContainer11.Panel1.ResumeLayout(false);
-            this.splitContainer11.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer11)).EndInit();
-            this.splitContainer11.ResumeLayout(false);
-            this.flowLayoutPanel9.ResumeLayout(false);
-            this.tableLayoutPanel11.ResumeLayout(false);
-            this.tableLayoutPanel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.oilDataView)).EndInit();
+            this.splitContainer12.Panel1.ResumeLayout(false);
+            this.splitContainer12.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer12)).EndInit();
+            this.splitContainer12.ResumeLayout(false);
+            this.flowLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel12.ResumeLayout(false);
+            this.tableLayoutPanel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tyreDataView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2641,6 +2790,14 @@
         private System.Windows.Forms.Button reportOilSearchButton;
         private System.Windows.Forms.Button reportOilClearButton;
         private System.Windows.Forms.DataGridView oilDataView;
+        private System.Windows.Forms.SplitContainer splitContainer12;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel10;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
+        private System.Windows.Forms.TextBox reportTyreText;
+        private System.Windows.Forms.ComboBox reportTyreCombo;
+        private System.Windows.Forms.Button reportTyreSearchButton;
+        private System.Windows.Forms.Button reportTyreClearButton;
+        private System.Windows.Forms.DataGridView tyreDataView;
     }
 }
 
