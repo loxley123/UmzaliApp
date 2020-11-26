@@ -1,0 +1,46 @@
+{
+    "MajorPlants": [
+        "plantNo",
+	"serialNo",
+	"machineMake",
+	"model",
+	"description",
+	"tyreSizeFront",
+	"quantityFront",
+	"tyreSizeRear",
+	"quantityRear"
+    ],
+    "SmallPlants": [
+        "plantNo",
+        "serialNo",
+        "machineNo",
+        "model",
+        "description"
+    ],
+    "JobCards": [
+        "jobCardNo",
+	"date",
+	"plantNo",
+	"machHours",
+	"kilometers",
+	"artisan",
+	"jobDesc",
+	"purchases",
+	"orderNo",
+	"oil",
+	"liters",
+	"labourHours",
+	"travelHours",
+	"site",
+	"contactNo",
+	"operators"
+    ],
+    "OilDetails": [
+        "primaryKey",
+	"oilType",
+	"date",
+	"liters",
+	"orderNo",
+	"artisan"
+    ]    
+}
