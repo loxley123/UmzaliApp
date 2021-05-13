@@ -40,12 +40,16 @@ namespace UmzaliApp
             string LabourSelect = "JobCardsSelect";
             string OilSelect = "OilDetailsSelect";
             string TyresSelect = "TyresSelect";
+            string OrdersSelect = "OrdersSelect";
+            string OrderDetailsSelect = "OrderDetailsSelect";
 
             da.SetupComboWithColNames(MPSelect, reportMPCombo);
             da.SetupComboWithColNames(SPSelect, reportSPCombo);
             da.SetupComboWithColNames(LabourSelect, reportLabourCombo);
             da.SetupComboWithColNames(OilSelect, reportOilCombo);
             da.SetupComboWithColNames(TyresSelect, reportTyreCombo);
+            da.SetupComboWithColNames(OrdersSelect, reportOrdersCombo);
+            da.SetupComboWithColNames(OrderDetailsSelect, reportOrderDetailsCombo);
             
             orderFormOrderNoText.Text = (da.GetLastOrderID()).ToString();
 
@@ -59,6 +63,8 @@ namespace UmzaliApp
             labourDataView.DataSource = da.GetDataTable(LabourSelect);
             oilDataView.DataSource = da.GetDataTable(OilSelect);
             tyreDataView.DataSource = da.GetDataTable(TyresSelect);
+            ordersDataView.DataSource = da.GetDataTable(OrdersSelect);
+            orderDetailsDataView.DataSource = da.GetDataTable(OrderDetailsSelect);
             
 
         }
@@ -400,5 +406,17 @@ namespace UmzaliApp
         {
             tyreDataView.DataSource = da.SearchTable("TyresSearchSelect", reportTyreText.Text, reportTyreCombo.SelectedIndex, "Tyres");
         }
+        private void reportTyreClearButton_Click(object sender, EventArgs e)
+        {
+            tyreDataView.DataSource = da.GetDataTable("TyreSelect");
+            reportTyreText.Clear();
+        }
+
+        private void reportOrdersSearchButton_Click(object sender, EventArgs e)
+        {
+            ordersDataView.DataSource = da.SearchTable("OrdersSearchSelect", reportOrdersText.Text, reportOrdersCombo.SelectedIndex, "Orders");
+        }
+
+       
     }
 }
