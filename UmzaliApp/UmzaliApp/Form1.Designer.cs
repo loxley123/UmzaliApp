@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.reportsTab = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -79,9 +79,34 @@
             this.oilDataView = new System.Windows.Forms.DataGridView();
             this.tyresReportTab = new System.Windows.Forms.TabPage();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.splitContainer12 = new System.Windows.Forms.SplitContainer();
+            this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
+            this.reportTyreText = new System.Windows.Forms.TextBox();
+            this.reportTyreCombo = new System.Windows.Forms.ComboBox();
+            this.reportTyreSearchButton = new System.Windows.Forms.Button();
+            this.reportTyreClearButton = new System.Windows.Forms.Button();
+            this.tyreDataView = new System.Windows.Forms.DataGridView();
             this.orderReportTab = new System.Windows.Forms.TabPage();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.splitContainer8 = new System.Windows.Forms.SplitContainer();
+            this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
+            this.reportOrdersText = new System.Windows.Forms.TextBox();
+            this.reportOrdersCombo = new System.Windows.Forms.ComboBox();
+            this.reportOrdersSearchButton = new System.Windows.Forms.Button();
+            this.reportOrdersClearButton = new System.Windows.Forms.Button();
+            this.ordersDataView = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.splitContainer13 = new System.Windows.Forms.SplitContainer();
+            this.flowLayoutPanel12 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
+            this.reportOrderDetailsText = new System.Windows.Forms.TextBox();
+            this.reportOrderDetailsCombo = new System.Windows.Forms.ComboBox();
+            this.reportOrderDetailsSearch = new System.Windows.Forms.Button();
+            this.reportOrderDetailsClear = new System.Windows.Forms.Button();
+            this.orderDetailsDataView = new System.Windows.Forms.DataGridView();
             this.newMajorPlantTab = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -207,14 +232,6 @@
             this.newOilEntryButton = new System.Windows.Forms.Button();
             this.archiveTab = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.splitContainer12 = new System.Windows.Forms.SplitContainer();
-            this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
-            this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.reportTyreText = new System.Windows.Forms.TextBox();
-            this.reportTyreCombo = new System.Windows.Forms.ComboBox();
-            this.reportTyreSearchButton = new System.Windows.Forms.Button();
-            this.reportTyreClearButton = new System.Windows.Forms.Button();
-            this.tyreDataView = new System.Windows.Forms.DataGridView();
             this.tabControl.SuspendLayout();
             this.reportsTab.SuspendLayout();
             this.majorPlantReportTab.SuspendLayout();
@@ -255,10 +272,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.oilDataView)).BeginInit();
             this.tyresReportTab.SuspendLayout();
             this.groupBox14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer12)).BeginInit();
+            this.splitContainer12.Panel1.SuspendLayout();
+            this.splitContainer12.Panel2.SuspendLayout();
+            this.splitContainer12.SuspendLayout();
+            this.flowLayoutPanel10.SuspendLayout();
+            this.tableLayoutPanel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tyreDataView)).BeginInit();
             this.orderReportTab.SuspendLayout();
-            this.groupBox6.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).BeginInit();
+            this.splitContainer8.Panel1.SuspendLayout();
+            this.splitContainer8.Panel2.SuspendLayout();
             this.splitContainer8.SuspendLayout();
+            this.flowLayoutPanel11.SuspendLayout();
+            this.tableLayoutPanel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersDataView)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer13)).BeginInit();
+            this.splitContainer13.Panel1.SuspendLayout();
+            this.splitContainer13.Panel2.SuspendLayout();
+            this.splitContainer13.SuspendLayout();
+            this.flowLayoutPanel12.SuspendLayout();
+            this.tableLayoutPanel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.orderDetailsDataView)).BeginInit();
             this.newMajorPlantTab.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -307,13 +345,6 @@
             this.flowLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.archiveTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer12)).BeginInit();
-            this.splitContainer12.Panel1.SuspendLayout();
-            this.splitContainer12.Panel2.SuspendLayout();
-            this.splitContainer12.SuspendLayout();
-            this.flowLayoutPanel10.SuspendLayout();
-            this.tableLayoutPanel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tyreDataView)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -841,35 +872,35 @@
             // 
             // oilDataView
             // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.oilDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.oilDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.oilDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.oilDataView.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.oilDataView.DefaultCellStyle = dataGridViewCellStyle2;
             this.oilDataView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.oilDataView.Location = new System.Drawing.Point(0, 0);
             this.oilDataView.Name = "oilDataView";
             this.oilDataView.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.oilDataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.oilDataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.oilDataView.Size = new System.Drawing.Size(752, 501);
             this.oilDataView.TabIndex = 0;
             // 
@@ -896,9 +927,130 @@
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Tyres Report";
             // 
+            // splitContainer12
+            // 
+            this.splitContainer12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.splitContainer12.Location = new System.Drawing.Point(3, 16);
+            this.splitContainer12.Name = "splitContainer12";
+            this.splitContainer12.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer12.Panel1
+            // 
+            this.splitContainer12.Panel1.Controls.Add(this.flowLayoutPanel10);
+            // 
+            // splitContainer12.Panel2
+            // 
+            this.splitContainer12.Panel2.Controls.Add(this.tyreDataView);
+            this.splitContainer12.Size = new System.Drawing.Size(752, 655);
+            this.splitContainer12.SplitterDistance = 150;
+            this.splitContainer12.TabIndex = 0;
+            // 
+            // flowLayoutPanel10
+            // 
+            this.flowLayoutPanel10.Controls.Add(this.tableLayoutPanel12);
+            this.flowLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel10.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel10.Name = "flowLayoutPanel10";
+            this.flowLayoutPanel10.Size = new System.Drawing.Size(752, 150);
+            this.flowLayoutPanel10.TabIndex = 0;
+            // 
+            // tableLayoutPanel12
+            // 
+            this.tableLayoutPanel12.ColumnCount = 2;
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel12.Controls.Add(this.reportTyreText, 0, 0);
+            this.tableLayoutPanel12.Controls.Add(this.reportTyreCombo, 0, 1);
+            this.tableLayoutPanel12.Controls.Add(this.reportTyreSearchButton, 0, 2);
+            this.tableLayoutPanel12.Controls.Add(this.reportTyreClearButton, 1, 2);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
+            this.tableLayoutPanel12.RowCount = 3;
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(250, 120);
+            this.tableLayoutPanel12.TabIndex = 0;
+            // 
+            // reportTyreText
+            // 
+            this.reportTyreText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel12.SetColumnSpan(this.reportTyreText, 2);
+            this.reportTyreText.Location = new System.Drawing.Point(3, 9);
+            this.reportTyreText.Name = "reportTyreText";
+            this.reportTyreText.Size = new System.Drawing.Size(244, 20);
+            this.reportTyreText.TabIndex = 0;
+            // 
+            // reportTyreCombo
+            // 
+            this.reportTyreCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel12.SetColumnSpan(this.reportTyreCombo, 2);
+            this.reportTyreCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reportTyreCombo.FormattingEnabled = true;
+            this.reportTyreCombo.Location = new System.Drawing.Point(3, 48);
+            this.reportTyreCombo.Name = "reportTyreCombo";
+            this.reportTyreCombo.Size = new System.Drawing.Size(244, 21);
+            this.reportTyreCombo.TabIndex = 1;
+            // 
+            // reportTyreSearchButton
+            // 
+            this.reportTyreSearchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportTyreSearchButton.Location = new System.Drawing.Point(3, 87);
+            this.reportTyreSearchButton.Name = "reportTyreSearchButton";
+            this.reportTyreSearchButton.Size = new System.Drawing.Size(119, 23);
+            this.reportTyreSearchButton.TabIndex = 2;
+            this.reportTyreSearchButton.Text = "Search";
+            this.reportTyreSearchButton.UseVisualStyleBackColor = true;
+            this.reportTyreSearchButton.Click += new System.EventHandler(this.reportTyreSearchButton_Click);
+            // 
+            // reportTyreClearButton
+            // 
+            this.reportTyreClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportTyreClearButton.Location = new System.Drawing.Point(128, 87);
+            this.reportTyreClearButton.Name = "reportTyreClearButton";
+            this.reportTyreClearButton.Size = new System.Drawing.Size(119, 23);
+            this.reportTyreClearButton.TabIndex = 3;
+            this.reportTyreClearButton.Text = "Clear";
+            this.reportTyreClearButton.UseVisualStyleBackColor = true;
+            this.reportTyreClearButton.Click += new System.EventHandler(this.reportTyreClearButton_Click);
+            // 
+            // tyreDataView
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tyreDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.tyreDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tyreDataView.DefaultCellStyle = dataGridViewCellStyle5;
+            this.tyreDataView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tyreDataView.Location = new System.Drawing.Point(0, 0);
+            this.tyreDataView.Name = "tyreDataView";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tyreDataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.tyreDataView.Size = new System.Drawing.Size(752, 501);
+            this.tyreDataView.TabIndex = 0;
+            // 
             // orderReportTab
             // 
-            this.orderReportTab.Controls.Add(this.groupBox6);
+            this.orderReportTab.Controls.Add(this.tabControl1);
             this.orderReportTab.Location = new System.Drawing.Point(124, 4);
             this.orderReportTab.Name = "orderReportTab";
             this.orderReportTab.Padding = new System.Windows.Forms.Padding(3);
@@ -907,27 +1059,227 @@
             this.orderReportTab.Text = "Order Report";
             this.orderReportTab.UseVisualStyleBackColor = true;
             // 
-            // groupBox6
+            // tabControl1
             // 
-            this.groupBox6.Controls.Add(this.splitContainer8);
-            this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(3, 3);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(758, 674);
-            this.groupBox6.TabIndex = 0;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Order Report";
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(3, 3);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(758, 674);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.splitContainer8);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(750, 648);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Orders";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // splitContainer8
             // 
             this.splitContainer8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer8.Location = new System.Drawing.Point(3, 16);
+            this.splitContainer8.Location = new System.Drawing.Point(3, 3);
             this.splitContainer8.Name = "splitContainer8";
             this.splitContainer8.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            this.splitContainer8.Size = new System.Drawing.Size(752, 655);
-            this.splitContainer8.SplitterDistance = 100;
+            // 
+            // splitContainer8.Panel1
+            // 
+            this.splitContainer8.Panel1.Controls.Add(this.flowLayoutPanel11);
+            // 
+            // splitContainer8.Panel2
+            // 
+            this.splitContainer8.Panel2.Controls.Add(this.ordersDataView);
+            this.splitContainer8.Size = new System.Drawing.Size(744, 642);
+            this.splitContainer8.SplitterDistance = 150;
             this.splitContainer8.TabIndex = 0;
+            // 
+            // flowLayoutPanel11
+            // 
+            this.flowLayoutPanel11.Controls.Add(this.tableLayoutPanel13);
+            this.flowLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel11.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel11.Name = "flowLayoutPanel11";
+            this.flowLayoutPanel11.Size = new System.Drawing.Size(744, 150);
+            this.flowLayoutPanel11.TabIndex = 0;
+            // 
+            // tableLayoutPanel13
+            // 
+            this.tableLayoutPanel13.ColumnCount = 2;
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel13.Controls.Add(this.reportOrdersText, 0, 0);
+            this.tableLayoutPanel13.Controls.Add(this.reportOrdersCombo, 0, 1);
+            this.tableLayoutPanel13.Controls.Add(this.reportOrdersSearchButton, 0, 2);
+            this.tableLayoutPanel13.Controls.Add(this.reportOrdersClearButton, 1, 2);
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel13.Name = "tableLayoutPanel13";
+            this.tableLayoutPanel13.RowCount = 3;
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(250, 120);
+            this.tableLayoutPanel13.TabIndex = 1;
+            // 
+            // reportOrdersText
+            // 
+            this.reportOrdersText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel13.SetColumnSpan(this.reportOrdersText, 2);
+            this.reportOrdersText.Location = new System.Drawing.Point(3, 9);
+            this.reportOrdersText.Name = "reportOrdersText";
+            this.reportOrdersText.Size = new System.Drawing.Size(244, 20);
+            this.reportOrdersText.TabIndex = 0;
+            // 
+            // reportOrdersCombo
+            // 
+            this.reportOrdersCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel13.SetColumnSpan(this.reportOrdersCombo, 2);
+            this.reportOrdersCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reportOrdersCombo.FormattingEnabled = true;
+            this.reportOrdersCombo.Location = new System.Drawing.Point(3, 48);
+            this.reportOrdersCombo.Name = "reportOrdersCombo";
+            this.reportOrdersCombo.Size = new System.Drawing.Size(244, 21);
+            this.reportOrdersCombo.TabIndex = 1;
+            // 
+            // reportOrdersSearchButton
+            // 
+            this.reportOrdersSearchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportOrdersSearchButton.Location = new System.Drawing.Point(3, 87);
+            this.reportOrdersSearchButton.Name = "reportOrdersSearchButton";
+            this.reportOrdersSearchButton.Size = new System.Drawing.Size(119, 23);
+            this.reportOrdersSearchButton.TabIndex = 2;
+            this.reportOrdersSearchButton.Text = "Search";
+            this.reportOrdersSearchButton.UseVisualStyleBackColor = true;
+            this.reportOrdersSearchButton.Click += new System.EventHandler(this.reportOrdersSearchButton_Click);
+            // 
+            // reportOrdersClearButton
+            // 
+            this.reportOrdersClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportOrdersClearButton.Location = new System.Drawing.Point(128, 87);
+            this.reportOrdersClearButton.Name = "reportOrdersClearButton";
+            this.reportOrdersClearButton.Size = new System.Drawing.Size(119, 23);
+            this.reportOrdersClearButton.TabIndex = 3;
+            this.reportOrdersClearButton.Text = "Clear";
+            this.reportOrdersClearButton.UseVisualStyleBackColor = true;
+            // 
+            // ordersDataView
+            // 
+            this.ordersDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ordersDataView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ordersDataView.Location = new System.Drawing.Point(0, 0);
+            this.ordersDataView.Name = "ordersDataView";
+            this.ordersDataView.Size = new System.Drawing.Size(744, 488);
+            this.ordersDataView.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.splitContainer13);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(750, 648);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Order Details";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer13
+            // 
+            this.splitContainer13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer13.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer13.Name = "splitContainer13";
+            this.splitContainer13.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer13.Panel1
+            // 
+            this.splitContainer13.Panel1.Controls.Add(this.flowLayoutPanel12);
+            // 
+            // splitContainer13.Panel2
+            // 
+            this.splitContainer13.Panel2.Controls.Add(this.orderDetailsDataView);
+            this.splitContainer13.Size = new System.Drawing.Size(744, 642);
+            this.splitContainer13.SplitterDistance = 150;
+            this.splitContainer13.TabIndex = 0;
+            // 
+            // flowLayoutPanel12
+            // 
+            this.flowLayoutPanel12.Controls.Add(this.tableLayoutPanel14);
+            this.flowLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel12.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel12.Name = "flowLayoutPanel12";
+            this.flowLayoutPanel12.Size = new System.Drawing.Size(744, 150);
+            this.flowLayoutPanel12.TabIndex = 0;
+            // 
+            // tableLayoutPanel14
+            // 
+            this.tableLayoutPanel14.ColumnCount = 2;
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel14.Controls.Add(this.reportOrderDetailsText, 0, 0);
+            this.tableLayoutPanel14.Controls.Add(this.reportOrderDetailsCombo, 0, 1);
+            this.tableLayoutPanel14.Controls.Add(this.reportOrderDetailsSearch, 0, 2);
+            this.tableLayoutPanel14.Controls.Add(this.reportOrderDetailsClear, 1, 2);
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel14.Name = "tableLayoutPanel14";
+            this.tableLayoutPanel14.RowCount = 3;
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(250, 120);
+            this.tableLayoutPanel14.TabIndex = 1;
+            // 
+            // reportOrderDetailsText
+            // 
+            this.reportOrderDetailsText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel14.SetColumnSpan(this.reportOrderDetailsText, 2);
+            this.reportOrderDetailsText.Location = new System.Drawing.Point(3, 9);
+            this.reportOrderDetailsText.Name = "reportOrderDetailsText";
+            this.reportOrderDetailsText.Size = new System.Drawing.Size(244, 20);
+            this.reportOrderDetailsText.TabIndex = 0;
+            // 
+            // reportOrderDetailsCombo
+            // 
+            this.reportOrderDetailsCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel14.SetColumnSpan(this.reportOrderDetailsCombo, 2);
+            this.reportOrderDetailsCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.reportOrderDetailsCombo.FormattingEnabled = true;
+            this.reportOrderDetailsCombo.Location = new System.Drawing.Point(3, 48);
+            this.reportOrderDetailsCombo.Name = "reportOrderDetailsCombo";
+            this.reportOrderDetailsCombo.Size = new System.Drawing.Size(244, 21);
+            this.reportOrderDetailsCombo.TabIndex = 1;
+            // 
+            // reportOrderDetailsSearch
+            // 
+            this.reportOrderDetailsSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportOrderDetailsSearch.Location = new System.Drawing.Point(3, 87);
+            this.reportOrderDetailsSearch.Name = "reportOrderDetailsSearch";
+            this.reportOrderDetailsSearch.Size = new System.Drawing.Size(119, 23);
+            this.reportOrderDetailsSearch.TabIndex = 2;
+            this.reportOrderDetailsSearch.Text = "Search";
+            this.reportOrderDetailsSearch.UseVisualStyleBackColor = true;
+            // 
+            // reportOrderDetailsClear
+            // 
+            this.reportOrderDetailsClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportOrderDetailsClear.Location = new System.Drawing.Point(128, 87);
+            this.reportOrderDetailsClear.Name = "reportOrderDetailsClear";
+            this.reportOrderDetailsClear.Size = new System.Drawing.Size(119, 23);
+            this.reportOrderDetailsClear.TabIndex = 3;
+            this.reportOrderDetailsClear.Text = "Clear";
+            this.reportOrderDetailsClear.UseVisualStyleBackColor = true;
+            // 
+            // orderDetailsDataView
+            // 
+            this.orderDetailsDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.orderDetailsDataView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.orderDetailsDataView.Location = new System.Drawing.Point(0, 0);
+            this.orderDetailsDataView.Name = "orderDetailsDataView";
+            this.orderDetailsDataView.Size = new System.Drawing.Size(744, 488);
+            this.orderDetailsDataView.TabIndex = 0;
             // 
             // newMajorPlantTab
             // 
@@ -2365,126 +2717,6 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Archive";
             // 
-            // splitContainer12
-            // 
-            this.splitContainer12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.splitContainer12.Location = new System.Drawing.Point(3, 16);
-            this.splitContainer12.Name = "splitContainer12";
-            this.splitContainer12.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer12.Panel1
-            // 
-            this.splitContainer12.Panel1.Controls.Add(this.flowLayoutPanel10);
-            // 
-            // splitContainer12.Panel2
-            // 
-            this.splitContainer12.Panel2.Controls.Add(this.tyreDataView);
-            this.splitContainer12.Size = new System.Drawing.Size(752, 655);
-            this.splitContainer12.SplitterDistance = 150;
-            this.splitContainer12.TabIndex = 0;
-            // 
-            // flowLayoutPanel10
-            // 
-            this.flowLayoutPanel10.Controls.Add(this.tableLayoutPanel12);
-            this.flowLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel10.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel10.Name = "flowLayoutPanel10";
-            this.flowLayoutPanel10.Size = new System.Drawing.Size(752, 150);
-            this.flowLayoutPanel10.TabIndex = 0;
-            // 
-            // tableLayoutPanel12
-            // 
-            this.tableLayoutPanel12.ColumnCount = 2;
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Controls.Add(this.reportTyreText, 0, 0);
-            this.tableLayoutPanel12.Controls.Add(this.reportTyreCombo, 0, 1);
-            this.tableLayoutPanel12.Controls.Add(this.reportTyreSearchButton, 0, 2);
-            this.tableLayoutPanel12.Controls.Add(this.reportTyreClearButton, 1, 2);
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel12.Name = "tableLayoutPanel12";
-            this.tableLayoutPanel12.RowCount = 3;
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(250, 120);
-            this.tableLayoutPanel12.TabIndex = 0;
-            // 
-            // reportTyreText
-            // 
-            this.reportTyreText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel12.SetColumnSpan(this.reportTyreText, 2);
-            this.reportTyreText.Location = new System.Drawing.Point(3, 9);
-            this.reportTyreText.Name = "reportTyreText";
-            this.reportTyreText.Size = new System.Drawing.Size(244, 20);
-            this.reportTyreText.TabIndex = 0;
-            // 
-            // reportTyreCombo
-            // 
-            this.reportTyreCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel12.SetColumnSpan(this.reportTyreCombo, 2);
-            this.reportTyreCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.reportTyreCombo.FormattingEnabled = true;
-            this.reportTyreCombo.Location = new System.Drawing.Point(3, 48);
-            this.reportTyreCombo.Name = "reportTyreCombo";
-            this.reportTyreCombo.Size = new System.Drawing.Size(244, 21);
-            this.reportTyreCombo.TabIndex = 1;
-            // 
-            // reportTyreSearchButton
-            // 
-            this.reportTyreSearchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.reportTyreSearchButton.Location = new System.Drawing.Point(3, 87);
-            this.reportTyreSearchButton.Name = "reportTyreSearchButton";
-            this.reportTyreSearchButton.Size = new System.Drawing.Size(119, 23);
-            this.reportTyreSearchButton.TabIndex = 2;
-            this.reportTyreSearchButton.Text = "Search";
-            this.reportTyreSearchButton.UseVisualStyleBackColor = true;
-            this.reportTyreSearchButton.Click += new System.EventHandler(this.reportTyreSearchButton_Click);
-            // 
-            // reportTyreClearButton
-            // 
-            this.reportTyreClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.reportTyreClearButton.Location = new System.Drawing.Point(128, 87);
-            this.reportTyreClearButton.Name = "reportTyreClearButton";
-            this.reportTyreClearButton.Size = new System.Drawing.Size(119, 23);
-            this.reportTyreClearButton.TabIndex = 3;
-            this.reportTyreClearButton.Text = "Clear";
-            this.reportTyreClearButton.UseVisualStyleBackColor = true;
-            // 
-            // tyreDataView
-            // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tyreDataView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.tyreDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tyreDataView.DefaultCellStyle = dataGridViewCellStyle8;
-            this.tyreDataView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tyreDataView.Location = new System.Drawing.Point(0, 0);
-            this.tyreDataView.Name = "tyreDataView";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tyreDataView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.tyreDataView.Size = new System.Drawing.Size(752, 501);
-            this.tyreDataView.TabIndex = 0;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2538,10 +2770,34 @@
             ((System.ComponentModel.ISupportInitialize)(this.oilDataView)).EndInit();
             this.tyresReportTab.ResumeLayout(false);
             this.groupBox14.ResumeLayout(false);
+            this.splitContainer12.Panel1.ResumeLayout(false);
+            this.splitContainer12.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer12)).EndInit();
+            this.splitContainer12.ResumeLayout(false);
+            this.flowLayoutPanel10.ResumeLayout(false);
+            this.tableLayoutPanel12.ResumeLayout(false);
+            this.tableLayoutPanel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tyreDataView)).EndInit();
             this.orderReportTab.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.splitContainer8.Panel1.ResumeLayout(false);
+            this.splitContainer8.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).EndInit();
             this.splitContainer8.ResumeLayout(false);
+            this.flowLayoutPanel11.ResumeLayout(false);
+            this.tableLayoutPanel13.ResumeLayout(false);
+            this.tableLayoutPanel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersDataView)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.splitContainer13.Panel1.ResumeLayout(false);
+            this.splitContainer13.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer13)).EndInit();
+            this.splitContainer13.ResumeLayout(false);
+            this.flowLayoutPanel12.ResumeLayout(false);
+            this.tableLayoutPanel14.ResumeLayout(false);
+            this.tableLayoutPanel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.orderDetailsDataView)).EndInit();
             this.newMajorPlantTab.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -2603,14 +2859,6 @@
             this.tableLayoutPanel8.ResumeLayout(false);
             this.tableLayoutPanel8.PerformLayout();
             this.archiveTab.ResumeLayout(false);
-            this.splitContainer12.Panel1.ResumeLayout(false);
-            this.splitContainer12.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer12)).EndInit();
-            this.splitContainer12.ResumeLayout(false);
-            this.flowLayoutPanel10.ResumeLayout(false);
-            this.tableLayoutPanel12.ResumeLayout(false);
-            this.tableLayoutPanel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tyreDataView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2629,8 +2877,6 @@
         private System.Windows.Forms.TabPage newSmallPlantTab;
         private System.Windows.Forms.TabPage newOrderTab;
         private System.Windows.Forms.TabPage jobCardsTab;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.SplitContainer splitContainer8;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -2798,6 +3044,25 @@
         private System.Windows.Forms.Button reportTyreSearchButton;
         private System.Windows.Forms.Button reportTyreClearButton;
         private System.Windows.Forms.DataGridView tyreDataView;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.SplitContainer splitContainer8;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel11;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
+        private System.Windows.Forms.TextBox reportOrdersText;
+        private System.Windows.Forms.ComboBox reportOrdersCombo;
+        private System.Windows.Forms.Button reportOrdersSearchButton;
+        private System.Windows.Forms.Button reportOrdersClearButton;
+        private System.Windows.Forms.DataGridView ordersDataView;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.SplitContainer splitContainer13;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel12;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
+        private System.Windows.Forms.TextBox reportOrderDetailsText;
+        private System.Windows.Forms.ComboBox reportOrderDetailsCombo;
+        private System.Windows.Forms.Button reportOrderDetailsSearch;
+        private System.Windows.Forms.Button reportOrderDetailsClear;
+        private System.Windows.Forms.DataGridView orderDetailsDataView;
     }
 }
 

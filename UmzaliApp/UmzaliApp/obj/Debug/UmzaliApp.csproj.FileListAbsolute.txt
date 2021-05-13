@@ -42,3 +42,7 @@ C:\Repos\UmzaliApp4\UmzaliApp\UmzaliApp\bin\Debug\data.json
 C:\Repos\UmzaliApp4\UmzaliApp\UmzaliApp\bin\Debug\Newtonsoft.Json.dll
 C:\Repos\UmzaliApp4\UmzaliApp\UmzaliApp\bin\Debug\Newtonsoft.Json.xml
 C:\Repos\UmzaliApp4\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.csproj.CopyComplete
+C:\Repos\UmzaliApp\UmzaliApp\UmzaliApp\bin\Debug\data.json
+C:\Repos\UmzaliApp\UmzaliApp\UmzaliApp\bin\Debug\Newtonsoft.Json.dll
+C:\Repos\UmzaliApp\UmzaliApp\UmzaliApp\bin\Debug\Newtonsoft.Json.xml
+C:\Repos\UmzaliApp\UmzaliApp\UmzaliApp\obj\Debug\UmzaliApp.csproj.CopyComplete

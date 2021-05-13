@@ -27,134 +27,142 @@ namespace UmzaliApp
 
         public void CreateMajorPlant(string plantNo, string serial, string mach, string model, string desc, string tireFront, int quanFront, string tireRear, int quanRear)
         {
-            using (conn = new SqlConnection(connectionString))
+            try
             {
-                try
-                {
-                    SqlCommand cmd = new SqlCommand("MajorPlantsInsert", conn);
-                    cmd.Connection = conn;
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.Add("@plantNo", SqlDbType.NVarChar).Value = plantNo;
-                    cmd.Parameters.Add("@serialNo", SqlDbType.NVarChar).Value = serial;
-                    cmd.Parameters.Add("@machineMake", SqlDbType.NVarChar).Value = mach;
-                    cmd.Parameters.Add("@model", SqlDbType.NVarChar).Value = model;
-                    cmd.Parameters.Add("@description", SqlDbType.NVarChar).Value = desc;
-                    cmd.Parameters.Add("@tireSizeFront", SqlDbType.NVarChar).Value = tireFront;
-                    cmd.Parameters.Add("@quantityFront", SqlDbType.Int).Value = quanFront;
-                    cmd.Parameters.Add("@tireSizeRear", SqlDbType.NVarChar).Value = tireRear;
-                    cmd.Parameters.Add("@quantityRear", SqlDbType.Int).Value = quanRear;
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
-                    conn.Close();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error: " + ex.Message);
-                }
+                SqlCommand cmd = new SqlCommand("MajorPlantsInsert", conn);
+                cmd.Connection = conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@plantNo", plantNo);
+                cmd.Parameters.AddWithValue("@serialNo", serial);
+                cmd.Parameters.AddWithValue("@machineMake", mach);
+                cmd.Parameters.AddWithValue("@model", model);
+                cmd.Parameters.AddWithValue("@description", desc);
+                cmd.Parameters.AddWithValue("@tireSizeFront", tireFront);
+                cmd.Parameters.AddWithValue("@quantityFront", quanFront);
+                cmd.Parameters.AddWithValue("@tireSizeRear", tireRear);
+                cmd.Parameters.AddWithValue("@quantityRear", quanRear);
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+                cmd.Dispose();
             }
         }
         public void CreateSmallPlant(string plantNo, string serial, string mach, string model, string desc) //Creates a new entry in the small plants table
         {
-
-            //conn = new SqlConnection(@"Data Source = DESKTOP-EJ3OT5A\SQLEXPRESS; Initial Catalog = testSSDB; Integrated Security = True");
-
-            using (conn = new SqlConnection(connectionString))
+            try
             {
-                try
-                {
-                    conn.Open();
-                    cmd = new SqlCommand("SmallPlantsInsert", conn);
-                    cmd.Connection = conn;
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@plantNo", plantNo);
-                    cmd.Parameters.AddWithValue("@serialNo", serial);
-                    cmd.Parameters.Add("@machineMake", SqlDbType.NVarChar).Value = mach;
-                    cmd.Parameters.Add("@model", SqlDbType.NVarChar).Value = model;
-                    cmd.Parameters.Add("@description", SqlDbType.NVarChar).Value = desc;
-
-                    cmd.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error: " + ex.Message);
-                }
+                conn.Open();
+                cmd = new SqlCommand("SmallPlantsInsert", conn);
+                cmd.Connection = conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@plantNo", plantNo);
+                cmd.Parameters.AddWithValue("@serialNo", serial);
+                cmd.Parameters.AddWithValue("@machineMake", mach);
+                cmd.Parameters.AddWithValue("@model", model);
+                cmd.Parameters.AddWithValue("@description", desc);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+                cmd.Dispose();
             }
         }
         public void CreateOilEntry(string oilType, DateTime date, double liters, string orderNo, string artisan)
         {
-            using (conn = new SqlConnection(connectionString))
+            try
             {
-                try
-                {
-                    conn.Open();
-                    cmd = new SqlCommand("OilDetailsInsert", conn);
-                    cmd.Connection = conn;
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.Add("@oilType", SqlDbType.NVarChar).Value = oilType;
-                    cmd.Parameters.Add("@date", SqlDbType.Date).Value = date;
-                    cmd.Parameters.Add("@liters", SqlDbType.Float).Value = liters;
-                    cmd.Parameters.Add("@orderNo", SqlDbType.NVarChar).Value = orderNo;
-                    cmd.Parameters.Add("@artisan", SqlDbType.NVarChar).Value = artisan;
-                    cmd.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error: " + ex.Message);
-                }
+                conn.Open();
+                cmd = new SqlCommand("OilDetailsInsert", conn);
+                cmd.Connection = conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@oilType", oilType);
+                cmd.Parameters.AddWithValue("@date", date);
+                cmd.Parameters.AddWithValue("@liters", liters);
+                cmd.Parameters.AddWithValue("@orderNo", orderNo);
+                cmd.Parameters.AddWithValue("@artisan", artisan);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+                cmd.Dispose();
             }
         }
 
         public void CreateNewOrder(int orderID, string companyID, string plantNo, DateTime dateRequired, string requestedBy, string desc, int machTime, string type, double total, string completedBy)
         {
-            using (conn = new SqlConnection(connectionString))
+            try
             {
-                try
-                {
-                    conn.Open();
-                    cmd = new SqlCommand("OrderInsert", conn);
-                    cmd.Connection = conn;
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.Add("@orderID", SqlDbType.SmallInt).Value = orderID;
-                    cmd.Parameters.Add("@CompanyID", SqlDbType.NVarChar).Value = companyID;
-                    cmd.Parameters.Add("@plantNo", SqlDbType.NVarChar).Value = plantNo;
-                    cmd.Parameters.Add("@dateRequired", SqlDbType.Date).Value = dateRequired;
-                    cmd.Parameters.Add("@requestedBy", SqlDbType.NVarChar).Value = requestedBy;
-                    cmd.Parameters.Add("@description", SqlDbType.NVarChar).Value = desc;
-                    cmd.Parameters.Add("@machineTime", SqlDbType.Time).Value = machTime;
-                    cmd.Parameters.Add("@type", SqlDbType.NVarChar).Value = type;
-                    cmd.Parameters.Add("@total", SqlDbType.Money).Value = total;
-                    cmd.Parameters.Add("@completedBy", SqlDbType.NVarChar).Value = completedBy;
-                    cmd.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error: " + ex.Message);
-                }
+                conn.Open();
+                cmd = new SqlCommand("OrderInsert", conn);
+                cmd.Connection = conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@orderID", orderID);
+                cmd.Parameters.AddWithValue("@CompanyID", companyID);
+                cmd.Parameters.AddWithValue("@plantNo", plantNo);
+                cmd.Parameters.AddWithValue("@dateRequired", dateRequired);
+                cmd.Parameters.AddWithValue("@requestedBy", requestedBy);
+                cmd.Parameters.AddWithValue("@description", desc);
+                cmd.Parameters.AddWithValue("@machineTime", machTime);
+                cmd.Parameters.AddWithValue("@type", type);
+                cmd.Parameters.AddWithValue("@total", total);
+                cmd.Parameters.AddWithValue("@completedBy", completedBy);
+                cmd.ExecuteNonQuery();
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+                cmd.Dispose();
+            }
+
         }
 
         public void CreateNewOrderDetails(int orderID, string partID, string desc, double amount, int quantity) //Creates a new entry in the order details table
         {
-            using (conn = new SqlConnection(connectionString))
+            try
             {
-                try
-                {
-                    conn.Open();
-                    cmd = new SqlCommand("OrderDetailsInsert", conn);
-                    cmd.Connection = conn;
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.Add("@orderID", SqlDbType.SmallInt).Value = orderID;
-                    cmd.Parameters.Add("@partID", SqlDbType.NVarChar).Value = partID;
-                    cmd.Parameters.Add("@description", SqlDbType.NVarChar).Value = desc;
-                    cmd.Parameters.Add("@amount", SqlDbType.Money).Value = amount;
-                    cmd.Parameters.Add("@quantity", SqlDbType.SmallInt).Value = quantity;
-                    cmd.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Error: " + ex.Message);
-                }
+                conn.Open();
+                cmd = new SqlCommand("OrderDetailsInsert", conn);
+                cmd.Connection = conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@orderID", orderID);
+                cmd.Parameters.AddWithValue("@partID", partID);
+                cmd.Parameters.AddWithValue("@description", desc);
+                cmd.Parameters.AddWithValue("@amount", amount);
+                cmd.Parameters.AddWithValue("@quantity", quantity);
+                cmd.ExecuteNonQuery();
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+                cmd.Dispose();
+            }
+
         }
 
         public int GetLastOrderID()//Get the last (highest number) in the order id column
